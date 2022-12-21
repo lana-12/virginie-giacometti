@@ -1,0 +1,1 @@
+{"version":3,"sources":["sass/general/_reset.sass","styles.css","sass/general/_body.sass","sass/general/_class.sass"],"names":[],"mappings":"AAAA;EACI,sBAAA;EACA,SAAA;EACA,UAAA;ACCJ;;ADCA;EACI,cAAA;EACA,qBAAA;ACEJ;;ADEA;EACI,qBAAA;ACCJ;;ADGA;EACI,gBAAA;ACAJ;;ACjBA;EACI,gBAAA;ADoBJ;;AEpBA;EACI,eAAA;EACA,gBAAA;AFuBJ;AEtBI;EACI,WAAA;EACA,yBAAA;AFwBR","file":"styles.css"}
