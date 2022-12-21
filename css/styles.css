@@ -11,6 +11,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -22,10 +23,57 @@ body {
 }
 
 .titleCustom {
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 25px;
+  font-weight: 800;
 }
 .titleCustom .before {
   color: pink;
   text-transform: uppercase;
+}
+
+.titleCard {
+  color: black;
+  font-weight: 700;
+}
+.titleCard .beforeCard {
+  color: pink;
+  text-transform: uppercase;
+}
+
+.btnCustom {
+  background-color: pink;
+  transition: 0.5s;
+  transition-property: background-color, color;
+}
+.btnCustom:hover {
+  background-color: black;
+  color: pink;
+}
+
+.card {
+  margin: 30px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: solid black 1px;
+  box-shadow: inset 0 0 1em white, 0 0 2em black;
+  margin: 30px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=styles.css.map */
