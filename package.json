@@ -6,7 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lana-12/virginie-giacometti.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lana-12/virginie-giacometti/issues"
+  },
+  "homepage": "https://github.com/lana-12/virginie-giacometti#readme",
+  "keywords": []
 }
