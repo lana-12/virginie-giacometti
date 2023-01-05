@@ -1,3 +1,41 @@
+footer
+    width: 100%
+    margin-top: 50px
+    border: solid 2px pink
+    // padding: 0px
+    // margin: 0px
+    background-color: #000 
+    color: #fff
+    transition: 0.3s
+    transition-property: font-weight, color
+    & a:hover
+        color: pink 
+        font-weight: 800
+    & .footer__contact
+        margin: 0px
+        display: flex
+        text-align: right
+        & .footer__logo
+            display: flex
+            justify-content: center
+            align-items: center
+            padding-top: 20px
+        & .footer__reseau__sociaux
+            margin: 50px 0px
+            & .reseau
+                font-size: 23px
+                transition: 0.3s
+                transition-property: font-weight, color
+                & .reseau:hover
+                    color: pink 
+                    font-weight: 800
+
+
+
+.accueil__footer__menuNavigation li
+    padding: 10px
+    
+    
 //copyright
 .separator__footer
     height: 1px
@@ -11,3 +49,39 @@
     & a:hover 
         color: pink
         font-weight:900
+
+
+/********MEDIA QUERY POUR ECRAN 576PX  ***********/
+/******min-width 576px**************/
+@include media($sm)
+    .footer__contact
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+    .footer__logo
+        padding-left: 0px auto
+    .contact__url__tel, .footer__reseaux__sociaux
+        line-height: 2.5em
+    .footer__logo, .accueil__footer__menuNavigation
+        border-left: solid 1px white
+    .footer__reseaux__sociaux, .accueil__footer__menuNavigation
+        text-align: center
+        margin-top: 50px
+    .test
+        padding-right: 50px
+/********MEDIA QUERY POUR ECRAN 992PX  ***********
+/******min-width 992px**************/
+@include media($lg)
+    .footer__contact
+        display: flex
+        text-align: center
+    
+    .footer__logo
+        padding-bottom: 5px
+        border-right: solid 1px white
+    
+    .accueil__footer__menuNavigation
+        margin-top: 0px
+        line-height: 2em
+

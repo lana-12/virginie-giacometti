@@ -20,10 +20,11 @@ ul {
 
 body {
   height: 100vh;
+  width: 100%;
 }
 
 .titleCustom {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 800;
 }
 .titleCustom .before {
@@ -50,6 +51,42 @@ body {
   color: pink;
 }
 
+.btnContact {
+  background-color: #fff;
+  color: #000;
+  border: solid 2px;
+  font-weight: 600;
+  border-radius: 3%;
+  transition: 0.3s;
+  transition-property: color, background-color;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.btnContact:hover {
+  background-color: pink;
+  color: #000;
+}
+
+.logo {
+  border-radius: 10px;
+  width: 150px;
+  border: solid 2px #fff;
+  margin-left: 0px;
+}
+
+.icon {
+  padding-right: 20px;
+}
+
+/********MEDIA QUERY POUR ECRAN 992PX  ***********/
+/******min-width 992px**************/
+@media screen and (min-width: 992px) {
+  .icon {
+    padding-right: 10px;
+  }
+}
 .card {
   margin: 30px;
 }
@@ -129,6 +166,47 @@ body {
     transform: translateX(-700%);
   }
 }
+footer {
+  width: 100%;
+  margin-top: 50px;
+  border: solid 2px pink;
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+  transition-property: font-weight, color;
+}
+footer a:hover {
+  color: pink;
+  font-weight: 800;
+}
+footer .footer__contact {
+  margin: 0px;
+  display: flex;
+  text-align: right;
+}
+footer .footer__contact .footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+footer .footer__contact .footer__reseau__sociaux {
+  margin: 50px 0px;
+}
+footer .footer__contact .footer__reseau__sociaux .reseau {
+  font-size: 23px;
+  transition: 0.3s;
+  transition-property: font-weight, color;
+}
+footer .footer__contact .footer__reseau__sociaux .reseau .reseau:hover {
+  color: pink;
+  font-weight: 800;
+}
+
+.accueil__footer__menuNavigation li {
+  padding: 10px;
+}
+
 .separator__footer {
   height: 1px;
   border: none;
@@ -145,13 +223,54 @@ body {
   font-weight: 900;
 }
 
+/********MEDIA QUERY POUR ECRAN 576PX  ***********/
+/******min-width 576px**************/
+@media screen and (min-width: 576px) {
+  .footer__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer__logo {
+    padding-left: 0px auto;
+  }
+  .contact__url__tel, .footer__reseaux__sociaux {
+    line-height: 2.5em;
+  }
+  .footer__logo, .accueil__footer__menuNavigation {
+    border-left: solid 1px white;
+  }
+  .footer__reseaux__sociaux, .accueil__footer__menuNavigation {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .test {
+    padding-right: 50px;
+  }
+}
+/********MEDIA QUERY POUR ECRAN 992PX  *********** */
+/******min-width 992px**************/
+@media screen and (min-width: 992px) {
+  .footer__contact {
+    display: flex;
+    text-align: center;
+  }
+  .footer__logo {
+    padding-bottom: 5px;
+    border-right: solid 1px white;
+  }
+  .accueil__footer__menuNavigation {
+    margin-top: 0px;
+    line-height: 2em;
+  }
+}
 .index {
   background-image: url("../../../img/background/back.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
-  height: 100%;
 }
 
 .intro {
@@ -171,9 +290,60 @@ body {
   align-content: center;
 }
 
-.contact {
+.contactBg {
+  background-image: url("../../../img/background/bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.contactBg .contact {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}/*# sourceMappingURL=styles.css.map */
+  margin-top: 40px;
+  transition: 0.3s;
+  transition-property: color, font-weight;
+}
+.contactBg .contact a:hover {
+  color: pink;
+  font-weight: 600;
+}
+.contactBg .form {
+  background-color: rgba(0, 0, 0, 0.256);
+  border: solid 2px;
+  max-width: 450px;
+  margin-top: 50px;
+  border-radius: 3%;
+  box-shadow: 5px 5px 50px #000;
+}
+
+.titleCol {
+  color: #fff;
+  text-shadow: 1px 1px 2px #000, 0 0 1em pink, 0 0 0.2em pink;
+  padding-bottom: 10px;
+}
+
+/********MEDIA QUERY POUR ECRAN 992PX  ***********/
+/******min-width 992px**************/
+@media screen and (min-width: 992px) {
+  .contactCol {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .contactCol .titleCol {
+    color: #000;
+    text-shadow: 1px 1px 2px pink, 0 0 1em pink, 0 0 0.2em pink;
+    padding-top: 0px;
+  }
+  .contactCol .contact {
+    color: #000;
+    padding-right: 10px;
+    margin-top: 0px;
+    text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #fff;
+  }
+}
+/********MEDIA QUERY POUR ECRAN 1200PX  ***********/
+/******min-width 1200px**************//*# sourceMappingURL=styles.css.map */
