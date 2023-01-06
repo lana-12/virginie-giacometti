@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2? family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Lora:ital@1&display=swap");
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -26,6 +28,7 @@ body {
 .titleCustom {
   font-size: 20px;
   font-weight: 800;
+  font-family: "Lora", serif;
 }
 .titleCustom .before {
   color: pink;
@@ -39,6 +42,14 @@ body {
 .titleCard .beforeCard {
   color: pink;
   text-transform: uppercase;
+}
+
+.title {
+  font-family: "Lora", serif;
+}
+
+.text {
+  font-family: "Satisfy", cursive;
 }
 
 .btnCustom {
@@ -74,10 +85,25 @@ body {
   width: 150px;
   border: solid 2px #fff;
   margin-left: 0px;
+  max-width: 100px;
 }
 
 .icon {
   padding-right: 20px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.shadowWhite {
+  text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+  color: #000;
+}
+
+.shadowBlack {
+  text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
+  color: #fff;
 }
 
 /********MEDIA QUERY POUR ECRAN 992PX  ***********/
@@ -271,23 +297,41 @@ footer .footer__contact .footer__reseau__sociaux .reseau .reseau:hover {
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
+  height: 100%;
+  font-family: "Satisfy", cursive;
 }
 
 .intro {
   display: flex;
   justify-content: center;
   align-content: center;
+  background-color: rgba(0, 0, 0, 0.756);
   border: solid black 1px;
+  border-radius: 5px;
   box-shadow: inset 0 0 1em white, 0 0 2em black;
   margin: 30px;
-  padding: 20px;
+  padding: 20px 10px;
   max-width: 500px;
 }
+.intro p, .intro i {
+  color: pink;
+  padding-right: 10px;
+  font-size: 1.1em;
+}
 
-.list {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+.about {
+  color: #000;
+}
+.about h3 {
+  font-size: 2.6em;
+  text-align: center;
+  margin: 50px 0;
+}
+.about p {
+  font-size: 1.3em;
+  padding: 0 10px;
+  text-align: justify;
+  font-weight: 500;
 }
 
 .contactBg {

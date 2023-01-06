@@ -2,6 +2,7 @@
 .titleCustom
     font-size: 20px
     font-weight: 800
+    font-family: $title
     & .before
         color: pink
         text-transform: uppercase
@@ -13,7 +14,13 @@
         color: pink
         text-transform: uppercase
 // STYLE TITLE end
+// Style Police start
+.title
+    font-family: $title
 
+.text
+    font-family: $text
+// Style Police end
     
 // STYLE btn start
 .btnCustom
@@ -47,12 +54,30 @@
     width: 150px
     border: solid 2px #fff
     margin-left: 0px
+    max-width: 100px
 // Style logo end
 
 // Icone page Contact start
 .icon
     padding-right: 20px
 // Icone page Contact end
+
+// Style General start
+.underline
+    text-decoration: underline
+
+.shadowWhite
+    text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff
+    color: #000
+
+.shadowBlack
+    text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000
+    color: #fff
+
+
+// Style General end
+
+
 
 /********MEDIA QUERY POUR ECRAN 992PX  ***********/
 /******min-width 992px**************/
