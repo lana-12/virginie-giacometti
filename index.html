@@ -34,12 +34,12 @@
 </head>
 <body class="index"> 
     
-    <!-- Execution modal au onload page -->
+    <!--  execution of the modal on page load -->
     <div class="modal" tabindex="-1" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header mx-auto">
-                    <h5 class="modal-title ">Site en cours de Construction !!</h5>
+                    <h5 class="modal-title ">Site en cours de Construction</h5>
                 </div>
                 <div class="modal-body ">
                     <p class="text-center pt-2">Merci de votre compréhension.</p>
@@ -53,7 +53,7 @@
 
     <header>
         
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><h1 class="titleCustom">Virginie<span class="before">Giacometti</span></h1></a>
 
@@ -121,7 +121,7 @@
                 <div class="col-12">
                     <!-- <div class=""> -->
                         <div class="about">
-                            <a href="#"><h3 class="title">Présentation</h3></a>
+                            <a href="#"><h3 class="title titleIndex">Présentation</h3></a>
                             <p class="shadowWhite">
                                 J’ai toujours été attiré par l’informatique mais la vie en a voulu autrement. Mon congé parental m’a permis de changer radicalement de voie professionnelle.</p>
                             <p class="shadowWhite">
@@ -138,14 +138,17 @@
                         </div>
 
                         <div>
-                            <a href="realisation.html" title="Cliquez pour accéder à mes réalisations" alt="Cliquez pour accéder à mes réalisations"><h3>Réalisations</h3></a>    
-                            <!-- test -->
-                            <a href="img/CV-développeurWeb.pdf" download="CV-développeurWeb">a telecharger</a>
+                            <a href="realisation.html" title="Cliquez pour accéder à mes réalisations" alt="Cliquez pour accéder à mes réalisations"><h3 class="title titleIndex">Réalisations</h3></a> 
+                            <p>Ici vous trouverez toutes mes réalisations ... <br> 
+                            En cours de rédaction <br>    
+                            😉 </p>   
+                            <!-- test ok  -->
+                            <a href="img/CV-développeurWeb.pdf" download="CV-développeurWeb" title="Cliquez pour visualiser mon CV" alt="Cliquez pour visualiser mon CV">CV</a>
                         </div>
 
-                        <div>
-                            <a href="contact.html" title="Cliquez pour accéder à ma page contact" alt="Cliquez pour accéder à ma page contact"><h3>Me Contacter</h3></a>
-                        </div>
+                        <!-- <div>
+                            <a href="contact.html" title="Cliquez pour accéder à ma page contact" alt="Cliquez pour accéder à ma page contact"><h3 class="title titleIndex">Me Contacter</h3></a>
+                        </div> -->
 
                     <!-- </div> -->
                 </div>
@@ -154,44 +157,50 @@
     </main>
 
     <footer class="">
-        <section class="footer__contact">
+        <section class="">
             <div class="row">
-                <div class="col-12 col-sm-5 col-lg-3">
-                    <h4>Contactez-moi <em>!</em> </h4>
-                    
-                        <p>
-                            <a class="test" href="mailto:giacomettivirginie@gmail.com" title="Lien URL vers page Contact - Cliquez pour accéder au formulaire"><i class="fa-solid fa-envelope"></i>
-                            giacomettivirginie@gmail.com
-                            </a>
-                        </p>
-                    
-                    
-                        <p>
-                            <a href="tel:0618568698" title="Contact téléphonique - Cliquez pour appeler" alt="Contact téléphonique - Cliquez pour appeler"><i class="fa fa-phone "></i>0618568698</a>
-                        </p>
-                    
-                    
-                        <a href="https://www.linkedin.com" target="_blank" title="Lien vers Linkedin" ><i
-                                class="fa-brands reseau fa-linkedin"></i></a>
-                    
-                </div>
+                <div class="col-12 ">
+                    <h4 class="titleIndex title text-center">Contactez-moi <em>!</em> </h4>
+                    <div class="footerContact">
+                        <div class="address">
+                            <p>
+                                <a class="test" href="mailto:giacomettivirginie@gmail.com" title="Lien URL vers page Contact - Cliquez pour accéder au formulaire"><i class=" fa-solid fa-envelope"></i>
+                                giacomettivirginie@gmail.com
+                                </a>
+                            </p>
+                        
+                        
+                            <p>
+                                <a href="tel:0618568698" title="Contact téléphonique - Cliquez pour appeler" alt="Contact téléphonique - Cliquez pour appeler"><i class="fa fa-phone "></i>0618568698</a>
+                            </p>
+                        
+                        
+                            <a href="https://www.linkedin.com" target="_blank" title="Lien vers Linkedin" style="font-size: 25px;"><i
+                                    class="fa-brands reseau fa-linkedin"></i></a>
+                        
+                        </div>
 
-                <div class=" footer__logo col-12 col-sm-5 col-lg-3">
-                    <img class="logo img-fluid rounded " src="./img/logo.png" srcset="" alt="Logo de Virginie Giacometti" title="Logo de Virginie Giacometti">
-                </div>
-        
-        
-                <div class="col-12 col-sm-5 col-lg-3  accueil__footer__menuNavigation">
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="realisation.html">Réalisations</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                        <div class=" footerLogo  ">
+                            <img class="logo img-fluid rounded " src="./img/logo.png" srcset="" alt="Logo de Virginie Giacometti" title="Logo de Virginie Giacometti">
+                        </div>
             
+                        <div class="footerMenu">
+                            <ul>
+                                <li><a href="#">Accueil</a></li>
+                                <li><a href="realisation.html">Réalisations</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+            
+                        
+                    </div>
+                    
                 </div>
             </div>
         </section>
+
 <hr class="separator__footer">
+
         <section class="copyright">
             <div class="row">
                 <div class="col-12 ">

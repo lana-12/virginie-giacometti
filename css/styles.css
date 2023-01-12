@@ -44,6 +44,13 @@ body {
   text-transform: uppercase;
 }
 
+.titleIndex {
+  font-size: 2.6em;
+  text-align: center;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+
 .title {
   font-family: "Lora", serif;
 }
@@ -86,6 +93,7 @@ body {
   border: solid 2px #fff;
   margin-left: 0px;
   max-width: 100px;
+  box-shadow: 10px 5px 5px white;
 }
 
 .icon {
@@ -104,6 +112,10 @@ body {
 .shadowBlack {
   text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
   color: #fff;
+}
+
+nav {
+  background-color: #000;
 }
 
 /********MEDIA QUERY POUR ECRAN 992PX  ***********/
@@ -130,15 +142,15 @@ body {
 }
 
 .card {
-  margin: 10px;
-  width: 25rem;
+  font-family: "Satisfy", cursive;
+  margin: 30px 0px;
+  width: 18rem;
 }
 
 .slider-h {
   max-width: 300px;
-  margin: 30px auto;
+  margin: 10px auto;
   overflow: hidden;
-  border: 1px solid #f1f1f1;
 }
 
 .slider-h .slider {
@@ -212,8 +224,7 @@ body {
 footer {
   width: 100%;
   margin-top: 50px;
-  border: solid 2px pink;
-  background-color: #000;
+  padding-right: 15px;
   color: #fff;
   transition: 0.3s;
   transition-property: font-weight, color;
@@ -222,32 +233,16 @@ footer a:hover {
   color: pink;
   font-weight: 800;
 }
-footer .footer__contact {
-  margin: 0px;
-  display: flex;
-  text-align: right;
-}
-footer .footer__contact .footer__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-}
-footer .footer__contact .footer__reseau__sociaux {
-  margin: 50px 0px;
-}
-footer .footer__contact .footer__reseau__sociaux .reseau {
-  font-size: 23px;
-  transition: 0.3s;
-  transition-property: font-weight, color;
-}
-footer .footer__contact .footer__reseau__sociaux .reseau .reseau:hover {
-  color: pink;
-  font-weight: 800;
+footer i {
+  padding-right: 10px;
 }
 
-.accueil__footer__menuNavigation li {
-  padding: 10px;
+.footerContact {
+  text-align: right;
+}
+
+.footerLogo {
+  text-align: center;
 }
 
 .separator__footer {
@@ -266,48 +261,15 @@ footer .footer__contact .footer__reseau__sociaux .reseau .reseau:hover {
   font-weight: 900;
 }
 
-/********MEDIA QUERY POUR ECRAN 576PX  ***********/
-/******min-width 576px**************/
-@media screen and (min-width: 576px) {
-  .footer__contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/********MEDIA QUERY POUR ECRAN 560PX  ***********/
+/******min-width 560px**************/
+@media screen and (min-width: 540px) {
+  .footerContact {
     text-align: center;
-  }
-  .footer__logo {
-    padding-left: 0px auto;
-  }
-  .contact__url__tel, .footer__reseaux__sociaux {
-    line-height: 2.5em;
-  }
-  .footer__logo, .accueil__footer__menuNavigation {
-    border-left: solid 1px white;
-  }
-  .footer__reseaux__sociaux, .accueil__footer__menuNavigation {
-    text-align: center;
-    margin-top: 50px;
-  }
-  .test {
-    padding-right: 50px;
   }
 }
 /********MEDIA QUERY POUR ECRAN 992PX  *********** */
 /******min-width 992px**************/
-@media screen and (min-width: 992px) {
-  .footer__contact {
-    display: flex;
-    text-align: center;
-  }
-  .footer__logo {
-    padding-bottom: 5px;
-    border-right: solid 1px white;
-  }
-  .accueil__footer__menuNavigation {
-    margin-top: 0px;
-    line-height: 2em;
-  }
-}
 .index {
   background-image: url("../../../img/background/back.jpg");
   background-size: cover;
@@ -339,16 +301,19 @@ footer .footer__contact .footer__reseau__sociaux .reseau .reseau:hover {
 .about {
   color: #000;
 }
-.about h3 {
-  font-size: 2.6em;
-  text-align: center;
-  margin: 50px 0;
-}
 .about p {
   font-size: 1.3em;
   padding: 0 10px;
   text-align: justify;
   font-weight: 500;
+}
+
+.realisation {
+  background-image: url("../../../img/background/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .card-img-top {
