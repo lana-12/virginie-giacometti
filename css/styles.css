@@ -113,8 +113,25 @@ body {
     padding-right: 10px;
   }
 }
+.modal-content {
+  border: solid 2px #fff;
+  background-color: #524e4e;
+  font-family: "Lora", serif;
+}
+.modal-content .btnModal {
+  color: #fff;
+  background: #201e1e;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+.modal-content .btnModal:hover {
+  color: #000;
+  background: #fff;
+}
+
 .card {
-  margin: 30px;
+  margin: 10px;
+  width: 25rem;
 }
 
 .slider-h {
@@ -332,6 +349,10 @@ footer .footer__contact .footer__reseau__sociaux .reseau .reseau:hover {
   padding: 0 10px;
   text-align: justify;
   font-weight: 500;
+}
+
+.card-img-top {
+  height: 250px;
 }
 
 .contactBg {
