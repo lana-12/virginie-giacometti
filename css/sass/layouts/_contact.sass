@@ -1,15 +1,17 @@
 .contactBg
-    background-image: url("../../../img/background/bg.svg")
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
+    // background-image: url("../../../img/background/bg.svg")
+    background: #000000  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000)  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000) 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff
-    // padding-top: 20px
     & .contact
         display: flex
         align-items: center
         flex-direction: column
-        justify-content: center
+        text-align: center
         margin-top: 40px
         transition: 0.3s
         transition-property: color, font-weight
@@ -22,13 +24,14 @@
         border: solid 2px 
         max-width: 450px
         margin-top: 50px
+        padding: 0 20px
         border-radius: 3%
-        box-shadow: 5px 5px 50px #000
+        // box-shadow: 5px 5px 50px #000
 
 .titleCol
-    color: #fff
-    text-shadow: 1px 1px 2px #000, 0 0 1em pink, 0 0 0.2em pink
-    padding-bottom: 10px
+    padding-bottom: 20px
+    // color: #fff
+    // text-shadow: 1px 1px 2px #000, 0 0 1em pink, 0 0 0.2em pink
 
 
 /********MEDIA QUERY POUR ECRAN 992PX  ***********/
@@ -36,30 +39,11 @@
 @include media($lg)
     .contactCol
         display: flex
+        flex-direction: row
         justify-content: center
         align-content: center
-        & .titleCol
-            color: #000
-            text-shadow: 1px 1px 2px pink, 0 0 1em pink, 0 0 0.2em pink
-            padding-top: 0px
-        & .contact
-            color: #000
-            padding-right: 10px
-            margin-top: 0px
-            text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #fff
 
 
 /********MEDIA QUERY POUR ECRAN 1200PX  ***********/
 /******min-width 1200px**************/
 @include media($xl)
-    // .contactCol
-    //     & .contact
-            
-
-        // transition: 0.3s
-        // transition-property: color, font-weight
-        // & a:hover 
-        //     color: pink
-        //     font-weight: 600
-
-        // text-shadow: 1px 1px 2px pink, 0 0 1em pink, 0 0 0.2em pink

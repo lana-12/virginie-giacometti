@@ -13,8 +13,8 @@ $(document).ready(()=>{
 //     myModal.show(myModal);
 // }
 
-// window.onload = function () {
-//     console.log("function called...");
-//     var myModal = new bootstrap.Modal(document.getElementById("myModal"));
-//     myModal.show();
-// };
+window.onload = function () {
+    console.log("function called...");
+    var myModal = new bootstrap.Modal(document.getElementById("myModal"));
+    myModal.show();
+};

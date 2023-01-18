@@ -59,6 +59,10 @@ body {
   font-family: "Satisfy", cursive;
 }
 
+.pink {
+  color: pink;
+}
+
 .btnCustom {
   background-color: pink;
   transition: 0.5s;
@@ -97,7 +101,7 @@ body {
 }
 
 .icon {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .underline {
@@ -114,8 +118,23 @@ body {
   color: #fff;
 }
 
+.separatorWhite {
+  height: 3px;
+  border: none;
+  background: #fff;
+  width: 50%;
+  margin: 30px auto;
+}
+
+.separatorBlack {
+  height: 2px;
+  border: none;
+  background: #000;
+}
+
 nav {
   background-color: #000;
+  box-shadow: 1px 1px 3px pink;
 }
 
 /********MEDIA QUERY POUR ECRAN 992PX  ***********/
@@ -225,12 +244,12 @@ footer {
   width: 100%;
   margin-top: 50px;
   padding-right: 15px;
-  color: #fff;
+  color: #000;
   transition: 0.3s;
   transition-property: font-weight, color;
 }
 footer a:hover {
-  color: pink;
+  color: white;
   font-weight: 800;
 }
 footer i {
@@ -245,20 +264,14 @@ footer i {
   text-align: center;
 }
 
-.separator__footer {
-  height: 1px;
-  border: none;
-  background: #fff;
-}
-
 .copyright {
-  font-size: 0.8em;
+  font-size: 0.9em;
   transition: 0.3s;
   transition-property: color, font-weight;
 }
 .copyright a:hover {
-  color: pink;
-  font-weight: 900;
+  color: #fff;
+  font-weight: 800;
 }
 
 /********MEDIA QUERY POUR ECRAN 560PX  ***********/
@@ -271,7 +284,8 @@ footer i {
 /********MEDIA QUERY POUR ECRAN 992PX  *********** */
 /******min-width 992px**************/
 .index {
-  background-image: url("../../../img/background/back.jpg");
+  background: rgb(255, 192, 203);
+  background: linear-gradient(0deg, rgb(255, 192, 203) 0%, rgb(0, 0, 0) 55%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -287,7 +301,7 @@ footer i {
   background-color: rgba(0, 0, 0, 0.756);
   border: solid black 1px;
   border-radius: 5px;
-  box-shadow: inset 0 0 1em white, 0 0 2em black;
+  box-shadow: inset 0 0 1em pink, 0 0 2em black;
   margin: 30px;
   padding: 20px 10px;
   max-width: 500px;
@@ -302,7 +316,7 @@ footer i {
   color: #fff;
 }
 .about h3 {
-  color: #000;
+  color: pink;
 }
 .about p {
   font-size: 1.3em;
@@ -312,11 +326,13 @@ footer i {
 }
 
 .realisation {
-  background-image: url("../../../img/background/background.jpg");
+  background: rgb(255, 192, 203);
+  background: linear-gradient(0deg, rgb(255, 192, 203) 0%, rgb(0, 0, 0) 55%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+  color: #fff;
 }
 
 .card-img-top {
@@ -325,8 +341,9 @@ footer i {
 
 .cardCustom {
   width: 90%;
+  box-shadow: 0 0 1em pink;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.389);
+  background-color: rgba(255, 192, 203, 0.862);
   color: #000;
   display: flex;
   flex-direction: column;
@@ -353,17 +370,18 @@ footer i {
 /********MEDIA QUERY POUR ECRAN 992PX  ***********/
 /******min-width 992px**************/
 .contactBg {
-  background-image: url("../../../img/background/bg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: #000000;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
 }
 .contactBg .contact {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  text-align: center;
   margin-top: 40px;
   transition: 0.3s;
   transition-property: color, font-weight;
@@ -377,14 +395,12 @@ footer i {
   border: solid 2px;
   max-width: 450px;
   margin-top: 50px;
+  padding: 0 20px;
   border-radius: 3%;
-  box-shadow: 5px 5px 50px #000;
 }
 
 .titleCol {
-  color: #fff;
-  text-shadow: 1px 1px 2px #000, 0 0 1em pink, 0 0 0.2em pink;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 /********MEDIA QUERY POUR ECRAN 992PX  ***********/
@@ -392,19 +408,9 @@ footer i {
 @media screen and (min-width: 992px) {
   .contactCol {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
-  }
-  .contactCol .titleCol {
-    color: #000;
-    text-shadow: 1px 1px 2px pink, 0 0 1em pink, 0 0 0.2em pink;
-    padding-top: 0px;
-  }
-  .contactCol .contact {
-    color: #000;
-    padding-right: 10px;
-    margin-top: 0px;
-    text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #fff;
   }
 }
 /********MEDIA QUERY POUR ECRAN 1200PX  ***********/
