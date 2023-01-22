@@ -476,12 +476,12 @@ footer i {
 
 /********MEDIA QUERY POUR ECRAN 992PX  ***********/
 /******min-width 992px**************/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .contactCol {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-around;
+    align-content: space-around;
   }
 }
 /********MEDIA QUERY POUR ECRAN 1200PX  ***********/
