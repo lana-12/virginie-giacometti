@@ -108,6 +108,20 @@ body {
   text-decoration: underline;
 }
 
+.paragraph {
+  font-size: 1.3em;
+  padding: 0 10px;
+  text-align: justify;
+  text-indent: 10%;
+}
+
+.paragraph2 {
+  text-align: justify;
+  text-indent: 10%;
+  padding: 0 10px;
+  font-size: 1em;
+}
+
 .shadowWhite {
   text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
   color: #000;
@@ -158,6 +172,52 @@ nav {
 .modal-content .btnModal:hover {
   color: #000;
   background: #fff;
+}
+
+.slideImg {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+.slideImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.slideImg img.active {
+  opacity: 1;
+}
+
+.next, .previous, .nextAdmin, .previousAdmin {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next {
+  right: 1rem;
+}
+
+.previous {
+  left: 1rem;
+}
+
+.nextAdmin {
+  right: 1rem;
+}
+
+.previousAdmin {
+  left: 1rem;
 }
 
 .card {
@@ -286,9 +346,6 @@ footer i {
 .index {
   background: rgb(255, 192, 203);
   background: linear-gradient(0deg, rgb(255, 192, 203) 0%, rgb(0, 0, 0) 55%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: #fff;
   height: 100%;
   font-family: "Satisfy", cursive;
@@ -318,18 +375,10 @@ footer i {
 .about h3 {
   color: pink;
 }
-.about p {
-  font-size: 1.3em;
-  padding: 0 10px;
-  text-align: justify;
-  font-weight: 500;
-  text-indent: 10%;
-}
 
 .myProject {
   font-size: 1.3em;
   height: auto;
-  text-indent: 10%;
   margin-top: 40px;
 }
 .myProject h4 {
@@ -339,22 +388,12 @@ footer i {
   font-size: 0.7em;
 }
 
-.gallery {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.imgIndex {
-  width: 150px;
-  height: 150px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+.boxId {
+  border: solid 2px pink;
+  box-shadow: 0 0 5px white;
+  margin: 100px 0;
+  max-width: 500px;
+  margin: auto;
 }
 
 .realisation {

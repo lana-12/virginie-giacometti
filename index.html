@@ -125,17 +125,19 @@
 
                     <div class="about">
                         <a href="#"><h3 class="title titleIndex">Présentation</h3></a>
-                        <p class="">
+                        <p class="paragraph">
                             J’ai toujours été attiré par l’informatique mais la vie en a voulu autrement. Mon congé parental m’a permis de changer radicalement de voie professionnelle.</p>
-                        <p class="">
+                        <p class="paragraph">
                             Dès lors, je mis tout en œuvre pour percer dans cette voie et pris beaucoup de plaisir à développer divers projets.</p>
-                        <p class="">
+                        <p class="paragraph">
                             En Octobre 2021, je décide de franchir le cap en m’inscrivant dans une formation afin d’obtenir le Titre Professionnel de Développeur Web, Web Mobile. Cela a confirmé mon désir de devenir Développeur Web.
                         </p>
-                        <p class="">
-                            Tout au long de ma formation, j’ai pu concevoir différents projets pour valider les compétences apprises. <a href="realisation.html" title="Cliquez pour accéder à mes réalisations" alt="Cliquez pour accéder à mes réalisations" class="underline">(voir Toutes mes réalisations)</a>
+                        <p class="paragraph">
+                            Tout au long de ma formation, j’ai pu concevoir différents projets pour valider les compétences apprises. 
+                            
+                            <!-- <a href="realisation.html" title="Cliquez pour accéder à mes réalisations" alt="Cliquez pour accéder à mes réalisations" class="underline">(voir Toutes mes réalisations)</a> -->
                         </p>
-                        <p class="">
+                        <p class="paragraph">
                             Actuellement, j’ai réussi mon évaluation de fin de formation et mon oral est prévu pour Mars 2023 mais disponible pour une future collaboration.
                         </p>
                     </div>
@@ -154,30 +156,84 @@
                         <a href="realisation.html" title="Cliquez pour accéder à mes réalisations" alt="Cliquez pour accéder à mes réalisations">
                             <h3 class="title titleIndex pink">Réalisations</h3>
                         </a> 
-                        <p>Ici vous trouverez toutes mes réalisations ... <br> 
-                            <h2>En cours de rédaction 😉</h2>     
+                        <h2>En cours de rédaction 😉</h2> <br>
+                        <p class="paragraph">Ici vous trouverez une partie de mes réalisations. Elles sont toutes pensées mobile First mais reponsive à l'aide de média Queries et de Bootstrap. <br> 
+                                
                         </p>
                     </div>
 
                     <div class="myProject">
-                        <h4 class="titleCustom">Fitness<span class="before">Drive</span></h4>
-                        <h5 class="my-5">Version Mobile</h5>
-                        <div class="gallery mb-5">
-                            <img class="img-fluid imgIndex" src="./img/sreenshot/fitnessDrive/Login-Mobile.png" alt="Screenshot page Login" title="Screenshot page Login">
-                            <img class="img-fluid imgIndex" src="./img/sreenshot/fitnessDrive/Show-Franchise-Mobile.png" alt="Screenshot show Franchise" title="Screenshot show Franchise">
-                            <img class="img-fluid imgIndex d-none d-md-block" src="./img/sreenshot/fitnessDrive/Show-Structure-Mobile.png" alt="Screenshot show Structure" title="Screenshot show Structure">
-                        </div>
-                        <h5 class="mb-0">Version Desktop</h5>
-                        <div class="gallery">
-                            <img class="img-fluid imgIndex" src="./img/sreenshot/fitnessDrive/Login-Desktop.png" alt="Screenshot page Login " title="Screenshot page Login">
-                            <img class="img-fluid imgIndex" src="./img/sreenshot/fitnessDrive/Show-Franchise-Desktop.png" alt="Screenshot show Franchise" title="Screenshot show Franchise">
-                            <img class="img-fluid imgIndex d-none d-md-block" src="./img/sreenshot/fitnessDrive/Show-Structure-Desktop.png" alt="Screenshot show Structure" title="Screenshot show Structure">
-                        </div>
-    <hr class="separatorWhite">
+                        <h4 class="titleCustom text-center">Fitness<span class="before">Drive</span></h4>
+                        <h5 class="mt-5 underline fs-3 text-center">Vue pour le client</h5>
+                        <h6 class="mt-3 mb-5 titleCustom text-center">Les trois premières photos sont pour les mobiles et les trois suivantes sont pour les écrans plus grand. </h6>
 
-    <div>
-        <h5 class="fs-3 text-center">Panel d'administrateur</h5>
-        <h6 class="my-5">Version Mobile</h6>
+                        <div class="slideImg">
+                            <img class="imgSliderClient img-fluid active" src="./img/sreenshot/fitnessDrive/Login-Mobile.png" alt="Screenshot page Login" title="Screenshot page Login">
+                            <img class="imgSliderClient img-fluid " src="./img/sreenshot/fitnessDrive/Show-Franchise-Mobile.png" alt="Screenshot show Franchise" title="Screenshot show Franchise">
+                            <img class="imgSliderClient img-fluid " src="./img/sreenshot/fitnessDrive/Show-Structure-Mobile.png" alt="Screenshot show Structure" title="Screenshot show Structure">
+                            <img class="imgSliderClient img-fluid img-fluid" src="./img/sreenshot/fitnessDrive/Login-Desktop.png" alt="Screenshot page Login " title="Screenshot page Login" >
+                            <img class="imgSliderClient img-fluid" src="./img/sreenshot/fitnessDrive/Show-Franchise-Desktop.png" alt="Screenshot show Franchise" title="Screenshot show Franchise">
+                            <img class="imgSliderClient img-fluid" src="./img/sreenshot/fitnessDrive/Show-Structure-Desktop.png" alt="Screenshot show Structure" title="Screenshot show Structure">
+                            <div class="next">
+                                <i class="fa-solid fa-circle-chevron-right"></i>
+                            </div>
+
+                            <div class="previous">
+                                <i class="fa-solid fa-circle-chevron-left"></i>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 d-flex justify-content-around">
+                            <a href="https://fitnessdrive.fly.dev/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom">Site</a>
+                            <a href="https://github.com/lana-12/ecf-fitnessDrive" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+                        </div>
+
+                        <div class="paragraph2 boxId mt-5 pt-3 pb-3 ">
+                            <p class="">Code d'Accès:
+                                <p class="underline text-center">Pour une franchise :
+                                    <p>Id : ibanez@exemple.fr</p>
+                                    <p>MdP : ibanezibanez</p>
+                                </p>
+                            <br>
+                                <p class="underline text-center">Pour une structure :
+                                    <p>Id : trinhduc@exemple.fr</p>
+                                    <p>MdP : trinhductrinhduc</p>
+                                </p>
+                            </p>        
+                        </div>
+<hr class="separatorWhite">
+                    
+                        <h5 class="fs-3 text-center underline">Panel d'administrateur</h5>
+                        <h6 class="mt-3 mb-5 titleCustom text-center">Les trois premières photos sont pour les mobiles et les trois suivantes sont pour les écrans plus grand. </h6>
+
+                        <div class="slideImg">
+                            <img class="img-fluid imgSliderAdmin active" src="./img/sreenshot/fitnessDrive/Home-Admin-Mobile.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
+                            <img class="img-fluid imgSliderAdmin" src="./img/sreenshot/fitnessDrive/ListFranchise-Admin-Mobile.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
+                            <img class="img-fluid imgSliderAdmin " src="./img/sreenshot/fitnessDrive/FormCréation-Admin-Mobile.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
+                            <img class="img-fluid imgSliderAdmin" src="./img/sreenshot/fitnessDrive/Home-Admin-Desktop.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
+                            <img class="img-fluid imgSliderAdmin" src="./img/sreenshot/fitnessDrive/ListFranchise-Admin-Desktop.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
+                            <img class="img-fluid imgSliderAdmin " src="./img/sreenshot/fitnessDrive/FormCréation-Admin-Desktop.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
+
+                            <div class="nextAdmin">
+                                <i class="fa-solid fa-circle-chevron-right"></i>
+                            </div>
+
+                            <div class="previousAdmin">
+                                <i class="fa-solid fa-circle-chevron-left"></i>
+                            </div>
+                        </div>
+                    
+                        <div class="mt-5 d-flex justify-content-around">
+                            <a href="https://fitnessdrive.fly.dev/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom">Site</a>
+                            <a href="https://github.com/lana-12/ecf-fitnessDrive" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+                        </div>
+                        <div class="boxId mt-5 pt-3 pb-3 text-center">
+                            <p class="underline ">Code d'Accès:</p>
+                                <p >Aucun code ne peut être fourni pour des raisons de sécurité.</p>
+                        </div>
+                        
+
+        <!-- <h6 class="my-5">Version Mobile</h6>
         <div class="gallery mb-5">
                 <img class="img-fluid imgIndex" src="./img/sreenshot/fitnessDrive/Home-Admin-Mobile.png" alt="Sreenshot Panel d'Admin" title="Sreenshot Panel d'Admin">
                 <img class="img-fluid imgIndex" src="./img/sreenshot/fitnessDrive/ListFranchise-Admin-Mobile.png" alt="Sreenshot Panel d'Admin" title="Sreenshot Panel d'Admin">
@@ -189,33 +245,37 @@
                 <img class="img-fluid imgIndex" src="./img/sreenshot/fitnessDrive/Home-Admin-Desktop.png" alt="Sreenshot Panel d'Admin" title="Sreenshot Panel d'Admin">
                 <img class="img-fluid imgIndex" src="./img/sreenshot/fitnessDrive/ListFranchise-Admin-Desktop.png" alt="Sreenshot Panel d'Admin" title="Sreenshot Panel d'Admin">
                 <img class="img-fluid imgIndex d-none d-md-block" src="./img/sreenshot/fitnessDrive/FormCréation-Admin-Desktop.png" alt="Sreenshot Panel d'Admin" title="Sreenshot Panel d'Admin">
-        </div>
-    </div>
-                        <p>Ce projet est une application de gestion de salle de sport. L’équipe technique de la marque doit pouvoir ajouter des nouveaux franchisés et leurs structures mais aussi de gérer leurs différentes permissions. Les franchisés et leurs structures auront un accès est en lecture uniquement. L’objectif du projet est d’analyser les besoins et de développer l’application. J'ai réalisé cette application pour mon évaluation de fin de formation. Les langages utilisés sont principalement du PHP avec le framework Symfony.</p>
-                        <p> J’ai utilisé le pattern MVC qui m’a permis de bien structurer mon code source. J’ai pu découper mon projet en trois parties.
-                            <ul>
-                                <li>Pour le traitement des données ou de l'accès au données (Model)<br><span>Doctrine - ORM</span> </li>
-                                <li>Pour la mise en forme des données (View)<br><span>Twig - Moteur de template</span> </li>
-                                <li>Pour permettre de gérer la logique du code associé à une page (Controller)<br><span></span> </li>
-                            </ul>  
-                        </p>
-                    </div>
+        </div> -->
+                        <div class="mt-5 paragraph2">
+                            <p >Ce projet est une application de gestion de salle de sport. L’équipe technique de la marque doit pouvoir ajouter des nouveaux franchisés et leurs structures mais aussi de gérer leurs différentes permissions. Les franchisés et leurs structures auront un accès est en lecture uniquement.</p>
+                            <p >L’objectif du projet est d’analyser les besoins et de développer l’application. J'ai réalisé cette application pour mon évaluation de fin de formation. Les langages utilisés sont principalement du PHP avec le framework Symfony.</p>
+                            <p> J’ai utilisé le pattern MVC qui m’a permis de bien structurer mon code source. J’ai pu découper mon projet en trois parties.
+                                <ul>
+                                    <li>- Pour le traitement des données ou de l'accès au données (Model)<br><span>Doctrine - ORM</span> </li>
+                                    <li>- Pour la mise en forme des données (View)<br><span>Twig - Moteur de template</span> </li>
+                                    <li>- Pour permettre de gérer la logique du code associé à une page (Controller)<br><span></span> </li>
+                                </ul>  
+                            </p>
+                        </div>
 
+                    </div>
+<hr class="separatorWhite">
 
                     <div class="myProject">
-                        <h4 class="titleCustom">TRT<span class="before">Conseil</span></h4>
-                        <p>L'objectif de ce projet est de valider mes compétences en HTLM et CSS.Dans le cadre de ma formation, j'ai réalisé ce site pour évaluer de fin de formation. Les langages utilisés sont principalement du PHP avec le framework Symfony.</p>
-                        <p>Le design pattern MVC m'a permis de bien séparer les différentes parties du code de mon application.
+                        <h4 class="titleCustom text-center">TRT<span class="before">Conseil</span></h4>
+                        <p class="titleCustom text-center text-dark">EnCoursDeDévelopement</p>
 
+                        <div class="mt-5 paragraph2">
+                            <p>L'objectif de ce projet est de valider mes compétences en HTLM et CSS.Dans le cadre de ma formation, j'ai réalisé ce site pour évaluer de fin de formation. Les langages utilisés sont principalement du PHP avec le framework Symfony.</p>
+                            <p>Le design pattern MVC m'a permis de bien séparer les différentes parties du code de mon application.
 
-
-                            
-                            <ul>
-                                <li>Pour le traitement des données ou de l'accès au données (Model)<br><span>Doctrine - ORM</span> </li>
-                                <li>Pour la mise en forme des données (View)<br><span>Twig - Moteur de template</span> </li>
-                                <li>Pour permettre de gérer la logique du code associé à une page (Controller)<br><span></span> </li>
-                            </ul>  
-                        </p>
+                                <ul>
+                                    <li>Pour le traitement des données ou de l'accès au données (Model)<br><span>Doctrine - ORM</span> </li>
+                                    <li>Pour la mise en forme des données (View)<br><span>Twig - Moteur de template</span> </li>
+                                    <li>Pour permettre de gérer la logique du code associé à une page (Controller)<br><span></span> </li>
+                                </ul>  
+                            </p>
+                        </div>
                     </div>
 
                 </div>

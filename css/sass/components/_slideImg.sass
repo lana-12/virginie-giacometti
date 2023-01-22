@@ -1,0 +1,36 @@
+.slideImg
+    width: 100%
+    height: 50vh
+    position: relative
+    left: 0
+    right: 0
+    & img
+        object-fit: contain
+        height: 100%
+        width: 100%
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        transition: opacity .5s
+        &.active
+            opacity: 1
+
+.next, .previous, .nextAdmin, .previousAdmin
+    color: #fff
+    font-size: 2rem
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+.next
+    right: 1rem
+
+.previous
+    left: 1rem
+
+.nextAdmin
+    right: 1rem
+
+.previousAdmin
+    left: 1rem
