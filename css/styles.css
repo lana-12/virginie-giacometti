@@ -196,7 +196,7 @@ nav {
   opacity: 1;
 }
 
-.next, .previous, .nextAdmin, .previousAdmin, .nextTrtConseil, .previousTrtConseil {
+.next, .previous, .nextAdmin, .previousAdmin, .nextTrtConseil, .previousTrtConseil, .nextTrtConseilConsultant, .previousTrtConseilConsultant {
   color: #fff;
   font-size: 2rem;
   position: absolute;
@@ -204,28 +204,12 @@ nav {
   transform: translateY(-50%);
 }
 
-.next {
+.next, .nextAdmin, .nextTrtConseil, .nextTrtConseilConsultant {
   right: 1rem;
 }
 
-.previous {
+.previous, .previousAdmin, .previousAdmin, .previousTrtConseilConsultant {
   left: 1rem;
-}
-
-.nextAdmin {
-  right: 1rem;
-}
-
-.previousAdmin {
-  left: 1rem;
-}
-
-.previousAdmin {
-  left: 1rem;
-}
-
-.nextTrtConseil {
-  right: 1rem;
 }
 
 .card {
@@ -311,20 +295,27 @@ nav {
 footer {
   width: 100%;
   margin-top: 50px;
-  padding-right: 15px;
   color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   transition: 0.3s;
   transition-property: font-weight, color;
 }
 footer a:hover {
-  color: white;
+  color: pink;
   font-weight: 800;
 }
 footer i {
   padding-right: 10px;
 }
 
-.footerContact {
+.boxFooterBlack {
+  max-width: 900px;
+  border: solid 2px pink;
+  background-color: #000;
+  color: #fff;
   text-align: right;
 }
 
@@ -345,8 +336,11 @@ footer i {
 /********MEDIA QUERY POUR ECRAN 560PX  ***********/
 /******min-width 560px**************/
 @media screen and (min-width: 540px) {
-  .footerContact {
-    text-align: center;
+  .boxFooterBlack {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
   }
 }
 /********MEDIA QUERY POUR ECRAN 992PX  *********** */

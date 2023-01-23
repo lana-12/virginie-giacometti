@@ -1,53 +1,31 @@
 footer
     width: 100%
     margin-top: 50px
-    padding-right: 15px
-    // border: solid 2px pink
-    // background-color: #343a40
+    // padding-right: 15px
     color: #000
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
     transition: 0.3s
     transition-property: font-weight, color
     & a:hover
-        color: #ffff 
+        color: pink 
         font-weight: 800
     & i 
         padding-right: 10px
-        
-.footerContact
-    // display: flex
-    // flex-direction: column
-    text-align: right
 
+.boxFooterBlack
+    // width: 100%
+    max-width: 900px
+    border: solid 2px pink
+    background-color: #000
+    color: #fff
+    text-align: right
+    
 .footerLogo
     text-align: center
 
-// .footerMenu
-//     text-align: right
-//         margin: 0px
-//         display: flex
-//         text-align: right
-//         & i 
-//             padding-right: 10px
-//         & .footer__logo
-//             display: flex
-//             justify-content: center
-//             align-items: center
-//             padding-top: 20px
-//         & .footer__reseau__sociaux
-//             margin: 50px 0px
-//             & .reseau
-//                 transition: 0.3s
-//                 transition-property: font-weight, color
-//                 & .reseau:hover
-//                     color: pink 
-//                     font-weight: 800
-
-// .accueil__footer__menuNavigation li
-//     padding: 10px
-    
-    
-
-    
 .copyright
     font-size: 0.9em 
     transition: 0.3s
@@ -60,12 +38,11 @@ footer
 /********MEDIA QUERY POUR ECRAN 560PX  ***********/
 /******min-width 560px**************/
 @include media($sm)
-    .footerContact
-        text-align: center
-    // footer
-    //     padding-right: 10px
-    // .address
-    //     flex
+    .boxFooterBlack
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-content: center
 
 
 
