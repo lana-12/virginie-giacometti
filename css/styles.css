@@ -35,15 +35,6 @@ body {
   text-transform: uppercase;
 }
 
-.titleCard {
-  color: black;
-  font-weight: 700;
-}
-.titleCard .beforeCard {
-  color: pink;
-  text-transform: uppercase;
-}
-
 .titleIndex {
   font-size: 2.6em;
   text-align: center;
@@ -71,6 +62,17 @@ body {
 .btnCustom:hover {
   background-color: black;
   color: pink;
+}
+
+.btnCustomR {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  transition-property: background-color, color;
+}
+.btnCustomR:hover {
+  background-color: white;
+  color: black;
 }
 
 .btnContact {
@@ -196,7 +198,7 @@ nav {
   opacity: 1;
 }
 
-.next, .previous, .nextAdmin, .previousAdmin, .nextTrtConseil, .previousTrtConseil, .nextTrtConseilConsultant, .previousTrtConseilConsultant {
+.next, .previous, .nextAdmin, .previousAdmin, .nextTrtConseil, .previousTrtConseil, .nextTrtConseilConsultant, .previousTrtConseilConsultant, .nextTatto, .previousTatto, .nextAssos, .previousAssos {
   color: #fff;
   font-size: 2rem;
   position: absolute;
@@ -204,18 +206,50 @@ nav {
   transform: translateY(-50%);
 }
 
-.next, .nextAdmin, .nextTrtConseil, .nextTrtConseilConsultant {
+.next, .nextAdmin, .nextTrtConseil, .nextTrtConseilConsultant, .nextTatto, .nextAssos {
   right: 1rem;
 }
 
-.previous, .previousAdmin, .previousAdmin, .previousTrtConseilConsultant {
+.previous, .previousAdmin, .previousAdmin, .previousTrtConseilConsultant, .previousTatto, .previousAssos {
   left: 1rem;
 }
 
-.card {
-  font-family: "Satisfy", cursive;
-  margin: 30px 0px;
-  width: 18rem;
+.cardCustom {
+  max-width: 80%;
+  box-shadow: 0 0 0.2em white;
+  border-radius: 5px;
+  background-color: rgba(213, 105, 156, 0.942);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.cardCustom .imgCard {
+  width: 300px;
+  height: 300px;
+  border: solid 1px #000;
+  border-radius: 5px;
+  -o-object-fit: center;
+     object-fit: center;
+  overflow: hidden;
+}
+.cardCustom .textCard {
+  text-align: center;
+  padding-top: 20px;
+  line-height: 2.5em;
+}
+.cardCustom .titleCard {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+.cardCustom .titleCard .beforeCard {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .slider-h {
@@ -401,43 +435,8 @@ footer i {
 .realisation {
   background: rgb(255, 192, 203);
   background: linear-gradient(0deg, rgb(255, 192, 203) 0%, rgb(0, 0, 0) 55%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100%;
   color: #fff;
-}
-
-.card-img-top {
-  height: 250px;
-}
-
-.cardCustom {
-  width: 90%;
-  box-shadow: 0 0 1em pink;
-  border-radius: 5px;
-  background-color: rgba(255, 192, 203, 0.862);
-  color: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  padding-top: 20px;
-  margin-top: 30px;
-}
-.cardCustom .imgCard {
-  width: 300px;
-  height: 300px;
-  border: solid 1px #000;
-  border-radius: 5px;
-  -o-object-fit: center;
-     object-fit: center;
-  overflow: hidden;
-}
-.cardCustom .textCard {
-  text-align: center;
-  padding-top: 20px;
-  line-height: 2.5em;
 }
 
 /********MEDIA QUERY POUR ECRAN 992PX  ***********/

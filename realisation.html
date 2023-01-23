@@ -29,27 +29,31 @@
 <body class="realisation">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark ">
-            <div class="container-fluid ">
-                <a class="navbar-brand" href="index.html">
-                    <h1 class="titleCustom">Virginie<span class="before">Giacometti</span></h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><h1 class="titleCustom">Virginie<span class="before">Giacometti</span></h1></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link"  href="index.html">Accueil</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Réalisations</a>
+                            <a class="nav-link active" href="#">Réalisations</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="img/CV-développeurWeb.pdf" download="CV-développeurWeb" title="Cliquez pour visualiser mon CV" alt="Cliquez pour visualiser mon CV">CV</a>
+                        </li>
                     </ul>   
                 </div>
+
             </div>
         </nav>
     </header>
@@ -71,32 +75,62 @@
             </div>
         </div>
     </div>
-        <h2 class="text-center title mt-4">Mes réalisations</h2>
+        <h2 class="text-center title titleIndex mt-4">Mes réalisations</h2>
         <div class="d-flex justify-content-center flex-wrap  mt-4 ">
-        <!-- Card 13 Or Tatoo Start-->
-        <div class="cardCustom">
-            <img src="./img/test.png" class="img-fluid imgCard" alt="Screenshot du site" title="Screenshot du site" loading="lazy">
-            
-            <p class="text textCard"><span class="title titleCustom text-center">13'Or<span class="before">Tattoo</span></span> est un site vitrine pour un salon de Tatouage situé à St Bres. Ma cliente voulait un site très <strong>girly</strong> qui en harmonie avec son salon. </p>
 
-            <div class="mb-4">
-                <a href="https://13-or-tattoo.netlify.app/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom text me-4">Site</a>
-                <a href="https://github.com/lana-12/13-Or-Tattoo" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom text ">Lien GitHub</a>
+        <!-- Card 13 Or Tatoo Start-->
+            <div class="cardCustom">
+                <div class="slideImg">
+                    <img class="imgSliderTattoo img-fluid active" src="./img/screenshot/13OrTattoo/home1.png" alt="Screenshot page home" title="Screenshot page home">
+                    <img class="imgSliderTattoo img-fluid " src="./img/screenshot/13OrTattoo/gallery-mobile.png" alt="Screenshot gallery MobileFirst" title="Screenshot gallery MobileFirst">
+                    <img class="imgSliderTattoo img-fluid " src="./img/screenshot/13OrTattoo/gallery-tablette.png" alt="Screenshot gallery tablette" title="Screenshot gallery tablette">
+                    <img class="imgSliderTattoo img-fluid " src="./img/screenshot/13OrTattoo/about-mobile.png" alt="Screenshot about MobileFirst " title="Screenshot about MobileFirst" >
+                    <img class="imgSliderTattoo img-fluid" src="./img/screenshot/13OrTattoo/about-desktop.png" alt="Screenshot about Desktop" title="Screenshot about Desktop">
+                    <img class="imgSliderTattoo img-fluid" src="./img/screenshot/13OrTattoo/contact.png" alt="Screenshot page contact" title="Screenshot page contact">
+                    <div class="nextTatto">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
+
+                    <div class="previousTatto">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </div>
+                </div>
+
+                <p class="text paragraph textCard"><span class="title titleCard ">13'Or<span class="beforeCard">Tattoo</span> est un site vitrine pour un salon de Tatouage situé à St Bres. Ma cliente voulait un site très <strong>girly</strong> qui en harmonie avec son salon. Ce projet a été développé avec Html & CSS. </p>
+
+                <div class="mb-4">
+                    <a href="https://13-or-tattoo.netlify.app/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustomR text me-4">Site</a>
+                    <a href="https://github.com/lana-12/13-Or-Tattoo" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustomR text ">GitHub</a>
+                </div>
             </div>
-        </div>
         <!-- Card 13 Or Tatoo End-->   
 
         <!-- Card QuatrePattes start-->
         <div class="cardCustom">
-            <img src="./img/QuatrePattes.png" class="img-fluid imgCard" alt="Screenshot du site" title="Screenshot du site" loading="lazy">
-            
-            <p class="text textCard"><span class="title titleCustom text-center">Quatre<span class="before">Pattes</span></span> est un site vitrine d'une association fictive avec un nombre de page limitée. Pour cette évaluation, j'ai décidé de créer une association fictive de protection animale qui aurait pour but de venir en aide aux animaux errants ou abandonnés (chats et chiens). L'objectif de ce projet est de valider mes compétences en HTLM et CSS. Ce projet est mon premier site.</p>
+                <div class="slideImg">
+                    <img class="imgSliderAssos img-fluid active" src="./img/screenshot/assos/home-mobile.png" alt="Screenshot page home MobileFirst" title="Screenshot page home MobileFirst">
+                    <img class="imgSliderAssos img-fluid " src="./img/screenshot/assos/home-desktop.png" alt="Screenshot home Desktop" title="Screenshot home Desktop">
+                    <img class="imgSliderAssos img-fluid " src="./img/screenshot/assos/pageEvents-mobile.png" alt="Screenshot page Event MobileFirst" title="Screenshot page Event MobileFirst">
+                    <img class="imgSliderAssos img-fluid " src="./img/screenshot/assos/card-desktop.png" alt="Screenshot extrait card Desktop " title="Screenshot extrait card Desktop" >
+                    <img class="imgSliderAssos img-fluid" src="./img/screenshot/assos/footer-mobile.png" alt="Screenshot footer MobileFirst" title="Screenshot footer MobileFirst">
+                    <img class="imgSliderAssos img-fluid" src="./img/screenshot/assos/contact-desktop.png" alt="Screenshot page contact" title="Screenshot page contact">
+                    <div class="nextAssos">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </div>
 
-            <div class="mb-4">
-                <a href="https://quatres-pattes-virginie-giacometti.netlify.app/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom text me-4">Site</a>
-                <a href="https://github.com/lana-12/eval-assos" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom text ">Lien GitHub</a>
+                    <div class="previousAssos">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </div>
+                </div>
+
+                <p class="text paragraph textCard"><span class="title titleCard ">Quatre<span class="beforeCard">Pattes</span> est un site vitrine d'une association fictive avec un nombre de page limitée. Pour cette évaluation, j'ai décidé de créer une association fictive de protection animale qui aurait pour but de venir en aide aux animaux errants ou abandonnés (chats et chiens). L'objectif de ce projet est de valider mes compétences en HTLM et CSS. Ce projet est mon premier site. </p>
+
+                <div class="mb-4">
+                    <a href="https://quatres-pattes-virginie-giacometti.netlify.app/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustomR text me-4">Site</a>
+                    <a href="https://github.com/lana-12/eval-assos" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustomR text ">GitHub</a>
+                </div>
             </div>
-        </div>
+        
         <!-- Card QuatrePattes End-->
 
         <!-- Card DiceGame Start-->
@@ -152,6 +186,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 <!-- My JavaScript -->
+<script src="functionJs.js"></script>
 <script src="script2.js"></script>
 </body>
 </html>
