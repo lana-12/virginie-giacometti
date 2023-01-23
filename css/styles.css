@@ -196,7 +196,7 @@ nav {
   opacity: 1;
 }
 
-.next, .previous, .nextAdmin, .previousAdmin {
+.next, .previous, .nextAdmin, .previousAdmin, .nextTrtConseil, .previousTrtConseil {
   color: #fff;
   font-size: 2rem;
   position: absolute;
@@ -218,6 +218,14 @@ nav {
 
 .previousAdmin {
   left: 1rem;
+}
+
+.previousAdmin {
+  left: 1rem;
+}
+
+.nextTrtConseil {
+  right: 1rem;
 }
 
 .card {

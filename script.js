@@ -22,12 +22,22 @@ let imgSliderClient = document.getElementsByClassName("imgSliderClient");
     // IMG view Admin FitnessDrive
 let imgSliderAdmin = document.getElementsByClassName("imgSliderAdmin");
 
+    //IMG view Recruiter and candidacy TRTConseil
+let imgSliderTRTConseilClient = document.getElementsByClassName("imgSliderClientTRTConeil"
+);
+    //IMG view Consultant TRTConseil
+
+    //IMG view Admin TRTConseil
+
 // btn
     //FitnessDrive
 let next = document.querySelector(".next");
 let previous = document.querySelector(".previous");
 let nextAdmin = document.querySelector(".nextAdmin");
 let previousAdmin = document.querySelector(".previousAdmin");
+    //TRTConseil nextTrtConseil
+let nextTRTClient = document.querySelector(".nextTrtConseil");
+let previousTRTClient = document.querySelector(".previousTrtConseil");
 
 //Permettra de savoir quelle image afficher
 let etape = 0;
@@ -69,10 +79,23 @@ next.addEventListener('click', ()=>{ after(imgSliderClient)});
     // Admin FitnessDrive
 nextAdmin.addEventListener("click", ()=>{ after(imgSliderAdmin);})
 
+    // client trtConseil
+nextTRTClient.addEventListener("click", () => { after(imgSliderTRTConseilClient);
+});
+
 //au clic sur previous
+
 // client fitnessDrive
 previous.addEventListener("click", ()=> { before(imgSliderClient)});
 // Admin FitnessDrive
 previousAdmin.addEventListener("click", ()=>{ after(imgSliderAdmin);})
+
+    // client trtConseil
+previousTRTClient.addEventListener("click", () => { after(imgSliderTRTConseilClient);
+});
+
+console.log(imgSliderTRTConseilClient)
+console.log(nextTRTClient)
+console.log(previousTRTClient)
 
 // SlideImg End
