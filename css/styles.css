@@ -198,7 +198,7 @@ nav {
   opacity: 1;
 }
 
-.next, .previous, .nextAdmin, .previousAdmin, .nextTrtConseil, .previousTrtConseil, .nextTrtConseilConsultant, .previousTrtConseilConsultant, .nextTatto, .previousTatto, .nextAssos, .previousAssos {
+.next, .previous, .nextAdmin, .previousAdmin, .nextTrtConseil, .previousTrtConseil, .nextTrtConseilConsultant, .previousTrtConseilConsultant, .nextTatto, .previousTatto, .nextAssos, .previousAssos, .nextDg, .previousDg {
   color: #fff;
   font-size: 2rem;
   position: absolute;
@@ -206,11 +206,11 @@ nav {
   transform: translateY(-50%);
 }
 
-.next, .nextAdmin, .nextTrtConseil, .nextTrtConseilConsultant, .nextTatto, .nextAssos {
+.next, .nextAdmin, .nextTrtConseil, .nextTrtConseilConsultant, .nextTatto, .nextAssos, .nextDg {
   right: 1rem;
 }
 
-.previous, .previousAdmin, .previousAdmin, .previousTrtConseilConsultant, .previousTatto, .previousAssos {
+.previous, .previousAdmin, .previousAdmin, .previousTrtConseilConsultant, .previousTatto, .previousAssos, .previousDg {
   left: 1rem;
 }
 
@@ -218,7 +218,7 @@ nav {
   max-width: 80%;
   box-shadow: 0 0 0.2em white;
   border-radius: 5px;
-  background-color: rgba(213, 105, 156, 0.942);
+  background-color: pink;
   color: #000;
   display: flex;
   flex-direction: column;

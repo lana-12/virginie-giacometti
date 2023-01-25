@@ -16,6 +16,11 @@ let imgSliderAssos = document.getElementsByClassName("imgSliderAssos");
 let nextAssos = document.querySelector(".nextAssos");
 let previousAssos = document.querySelector(".previousAssos");
 
+    // Dicegame
+let imgSliderDG = document.getElementsByClassName("imgSliderDg");
+let nextDG = document.querySelector(".nextDg");
+let previousDG = document.querySelector(".previousDg");
+
 
 //au clic next
     //13OrTattoo
@@ -25,6 +30,11 @@ nextTatto.addEventListener("click", () => {
     // Assos QuatresPattes
 nextAssos.addEventListener("click", () => {
     after(imgSliderAssos);
+});
+
+    // DiceGame
+nextDG.addEventListener("click", () => {
+    after(imgSliderDG);
 });
 
 
@@ -38,4 +48,9 @@ previousTattoo.addEventListener("click", () => {
     // Assos QuatresPattes
 previousAssos.addEventListener("click", () => {
     before(imgSliderAssos);
+});
+
+    // DiceGame
+previousDG.addEventListener("click", () => {
+    before(imgSliderDG);
 });
