@@ -471,6 +471,14 @@ footer i {
   border-radius: 3%;
 }
 
+.invalid {
+  color: red;
+}
+
+.valid {
+  color: green;
+}
+
 .titleCol {
   padding-bottom: 20px;
 }

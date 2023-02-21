@@ -57,42 +57,53 @@
 
     <main class="container contactCol">
         <section class="contact ">
-                    <div class="row">
-                        <div class="col-12">
+            <div class="row">
+                <div class="col-12">
 
+                    <h2 class="text-center titleCol">Me Contacter </h2>
+                    <p><a href="tel:0618568698" title="Cliquer pour me téléphoner" alt="Cliquer pour me téléphoner"><i class="icon fa fa-phone "></i>0618568698</a></p>
+                                
+                    <p><a href="mailto:giacomettivirginie@gmail.com" alt="Cliquer pour m'envoyer un Email" title="Cliquer pour m'envoyer un Email"><i class="icon fa-solid fa-envelope"></i>giacomettivirginie@gmail.com</a></p>
 
-                        <h2 class="text-center titleCol">Me Contacter </h2>
-                            <p><a href="tel:0618568698" title="Cliquer pour me téléphoner" alt="Cliquer pour me téléphoner"><i class="icon fa fa-phone "></i>0618568698</a></p>
-                            
-                            <p><a href="mailto:giacomettivirginie@gmail.com" alt="Cliquer pour m'envoyer un Email" title="Cliquer pour m'envoyer un Email"><i class="icon fa-solid fa-envelope"></i>giacomettivirginie@gmail.com</a></p>
-                            <p><a href="https://www.linkedin.com/in/virginie-giacometti-a88a01220/" target="_blank" alt="Cliquer pour accéder à ma page" title="Cliquer pour accéder à ma page"><i class="icon fa-brands fa-linkedin"></i>Profil Linkedin</a></p>
+                    <p><a href="https://www.linkedin.com/in/virginie-giacometti-a88a01220/" target="_blank" alt="Cliquer pour accéder à ma page" title="Cliquer pour accéder à ma page"><i class="icon fa-brands fa-linkedin"></i>Profil Linkedin</a></p>
             
-                    </div>
-                    </div>
-                </section>
+                </div>
+            </div>
+        </section>
 
-                <section class="container form">
-                    <div class="row">
-                        <div class="col-12">
+        <section class="container form">
+            <div class="row">
+                <div class="col-12">
 
-                        <p class="text-center my-3 underline">Poser votre question </p>
-                        <form method="POST" action="#" name="contact" data-netlify="true" data-netlify-recaptcha="true">
+                    <p class="text-center my-3 underline">Poser votre question </p>
+                    <form method="POST"  name="contact" 
+                    id="myForm" data-netlify="true">
+                    <!-- data-netlify-recaptcha="true" -->
+                    <!-- data-netlify="true"  -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">Votre adresse E-mail</label>
+                            <input class="form-control" type="email" name="email" id="email"
+                                placeholder="exemple@exemple.com" required maxlength="70">
+                                <div class="">
+                                    <p class="invalid valid" id="validEmail"></p>
+                                </div>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="email" class="form-label">Votre adresse E-mail</label>
-                                <input class="form-control" type="email" name="email" id="email"
-                                    placeholder="exemple@exemple.com" required maxlength="70">
+                        <div class="form-group mt-5">
+                            <label for="message" class="form-label ">Tapez ici votre message</label>
+                            <textarea class="form-control" rows="3" id="message" name="message"
+                                placeholder="Tapez votre texte ici" required minlength="10"></textarea>
+
+                            <div class="">
+                                <p class="invalid valid" id="validMessage"></p>
                             </div>
-                            <div class="form-group mt-5">
-                                <label for="message" class="form-label ">Tapez ici votre message</label>
-                                <textarea class="form-control" rows="3" id="message" name="message"
-                                    placeholder="Tapez votre texte ici" required></textarea>
-                            </div>
-                            <button type="submit" id="submit" class="btn btnContact btn-sm my-3" >Envoyer</button>
-                        </form>
-                     </div>
-                     </div>
-                </section>
+                        </div>
+                        <!-- <div class="mb-3 captcha" data-netlify-recaptcha="true"></div>                             -->
+                        <button type="submit" value="Envoyer" class="btn btnContact btn-sm my-3" >Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
                 
 
@@ -113,6 +124,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 <!-- My JavaScript -->
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
+<script src="contact.js"></script>
 </body>
 </html>
