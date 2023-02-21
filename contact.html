@@ -78,8 +78,7 @@
                     <p class="text-center my-3 underline">Poser votre question </p>
                     <form method="POST"  name="contact" 
                     id="contact" data-netlify="true">
-                    <!-- data-netlify-recaptcha="true" -->
-                    <!-- data-netlify="true"  -->
+                     <input type="hidden" name="form-name" value="contact" />
                         <div class="form-group">
                             <label for="email" class="form-label">Votre adresse E-mail</label>
                             <input class="form-control" type="email" name="email" id="email"
@@ -98,7 +97,7 @@
                                 <p class="invalid valid" id="validMessage"></p>
                             </div>
                         </div>
-                        <!-- <div class="mb-3 captcha" data-netlify-recaptcha="true"></div>                             -->
+                    
                         <button type="submit" value="Envoyer" class="btn btnContact btn-sm my-3" >Envoyer</button>
                     </form>
                 </div>
