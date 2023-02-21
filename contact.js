@@ -49,7 +49,7 @@ window.onload = ()=>{
             }else if (regexMessage.test(txt) === false) {
                 validMessage.classList.remove("valid");
                 validMessage.classList.add("invalid");
-                validMessage.innerText ="je ne sais pas ";
+                validMessage.innerText ="Texte incorrect ";
                 e.preventDefault();
             }
         })
