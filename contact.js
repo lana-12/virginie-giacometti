@@ -1,6 +1,6 @@
 window.onload = ()=>{
 
-    let form = document.getElementById("myForm");
+    let form = document.getElementById("contact");
     let validEmail = document.getElementById("validEmail");
     let validMessage = document.getElementById("validMessage");
     let email = document.getElementById("email");
