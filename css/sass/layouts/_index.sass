@@ -20,11 +20,47 @@
         color: pink
         padding-right: 10px
         font-size: 1.1em
-    
+        transition: 0.5s
+        transition-property: color
+    & p
+        &:hover
+            color: #fff
+            font-weight: 600
+            
+
+
 .about
     color: #fff
     & h3
         color: pink
+    & h4
+        font-size: 1.8em
+        padding-bottom: 10px
+        text-align: center
+    & .aboutParagraph
+        display: flex
+        justify-content: center
+        align-content: center
+        background-color: rgba(0, 0, 0, 0.756)
+        border: solid black 1px
+        border-radius: 5px
+        box-shadow: inset 0 0 1em pink, 0 0 2em black
+        margin: 30px
+        margin-bottom: 60px
+        padding: 25px
+        max-width: 900px
+
+
+.listIndex
+    font-size: 1.2em
+    text-align: justify 
+    & .listOrd
+        color: pink 
+        & li 
+            list-style-type: circle
+            padding: 10px 0
+            color: #fff
+
 
 .myProject
     font-size: 1.3em
