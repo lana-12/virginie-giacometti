@@ -195,6 +195,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -219,7 +220,7 @@ nav {
 }
 
 .cardCustom {
-  width: 80%;
+  max-width: 20rem;
   box-shadow: 0 0 0.2em white;
   border-radius: 5px;
   background-color: pink;
@@ -232,9 +233,7 @@ nav {
   margin-top: 20px;
 }
 .cardCustom .imgCard {
-  width: 300px;
-  height: 300px;
-  border: solid 1px #000;
+  border: solid 5px #000;
   border-radius: 5px;
   -o-object-fit: center;
      object-fit: center;
@@ -256,6 +255,13 @@ nav {
   font-weight: 800;
 }
 
+/********MEDIA QUERY POUR ECRAN 768px  *********** */
+/******min-width 768px**************/
+@media screen and (min-width: 768px) {
+  .cardCustom {
+    margin-right: 50px;
+  }
+}
 .slider-h {
   max-width: 300px;
   margin: 10px auto;

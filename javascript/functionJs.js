@@ -1,4 +1,3 @@
-
 // imgSlide
 
 //Permettra de savoir quelle image afficher
