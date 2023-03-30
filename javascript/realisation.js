@@ -41,8 +41,9 @@ nextFD.addEventListener('click', ()=>{ after(imgSliderFD)});
 //au clic sur previous
 previousFD.addEventListener("click", ()=> { before(imgSliderFD)});
 
-
 //FitnessDrive END
+
+//////////////////////////////////////////////
 
 //PHP Start
 let imgSliderPhp = document.getElementsByClassName("imgSliderPhp");
@@ -57,10 +58,10 @@ nextPhp.addEventListener('click', ()=>{ after(imgSliderPhp)});
 //au clic sur previous
 previousPhp.addEventListener("click", ()=> { before(imgSliderPhp)});
 
-
-
-
 //PHP END
+
+//////////////////////////////////////////////
+//Partie FrontEnd START
 
 // init variable slideImg
     //13OrTattoo
@@ -68,15 +69,20 @@ let imgSliderTattoo = document.getElementsByClassName("imgSliderTattoo");
 let nextTatto = document.querySelector(".nextTatto");
 let previousTattoo = document.querySelector(".previousTatto");
 
-//     // Assos QuatresPattes
+    // Assos QuatresPattes
 let imgSliderAssos = document.getElementsByClassName("imgSliderAssos");
 let nextAssos = document.querySelector(".nextAssos");
 let previousAssos = document.querySelector(".previousAssos");
 
-//     // Dicegame
+    // Dicegame
 let imgSliderDG = document.getElementsByClassName("imgSliderDg");
 let nextDG = document.querySelector(".nextDg");
 let previousDG = document.querySelector(".previousDg");
+
+    // CharlesCantin - Photographe -
+let imgSliderCC = document.getElementsByClassName("imgSliderCharlesCantin");
+let nextCC = document.querySelector(".nextCC");
+let previousCC = document.querySelector(".previousCC");
 
 
 //au clic next
@@ -84,34 +90,51 @@ let previousDG = document.querySelector(".previousDg");
 nextTatto.addEventListener("click", () => {
     after(imgSliderTattoo);
 });
-//     // Assos QuatresPattes
+    // Assos QuatresPattes
 nextAssos.addEventListener("click", () => {
     after(imgSliderAssos);
 });
 
-//     // DiceGame
+    // DiceGame
 nextDG.addEventListener("click", () => {
     after(imgSliderDG);
+    // alert('ok')
+});
+    // CharlesCantin - Photographe -
+nextCC.addEventListener("click", () => {
+    after(imgSliderCC);
     // alert('ok')
 });
 
 
 
 //au clic sur previous
-//     //13OrTattoo
+    //13OrTattoo
 previousTattoo.addEventListener("click", () => {
     before(imgSliderTattoo);
 });
 
-//     // Assos QuatresPattes
+     // Assos QuatresPattes
 previousAssos.addEventListener("click", () => {
     before(imgSliderAssos);
 });
 
-//     // DiceGame
+    // DiceGame
 previousDG.addEventListener("click", () => {
     before(imgSliderDG);
 });
+
+    // CharlesCantin - Photographe -
+previousCC.addEventListener("click", () => {
+    before(imgSliderCC);
+});
+
+
+//Partie FrontEnd END
+
+
+
+
 
 };
 
