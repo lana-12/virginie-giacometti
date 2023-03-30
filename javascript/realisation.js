@@ -44,6 +44,23 @@ previousFD.addEventListener("click", ()=> { before(imgSliderFD)});
 
 //FitnessDrive END
 
+//PHP Start
+let imgSliderPhp = document.getElementsByClassName("imgSliderPhp");
+
+// btn
+let nextPhp = document.querySelector(".nextPhp");
+let previousPhp = document.querySelector(".previousPhp");
+
+//au clic next
+nextPhp.addEventListener('click', ()=>{ after(imgSliderPhp)});
+
+//au clic sur previous
+previousPhp.addEventListener("click", ()=> { before(imgSliderPhp)});
+
+
+
+
+//PHP END
 
 // init variable slideImg
     //13OrTattoo
