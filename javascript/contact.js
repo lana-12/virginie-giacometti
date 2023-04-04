@@ -21,7 +21,7 @@ window.onload = ()=>{
         else if (!regexEmail.test(value)) {
             validEmail.classList.add("invalid");
             validEmail.classList.remove("valid");
-            validEmail.innerText = "Veuillez saisir un email valide !"
+            validEmail.innerText = "Veuillez saisir un email  !"
         } else{
             validEmail.classList.add("valid");
             validEmail.classList.remove("invalid");
@@ -38,7 +38,7 @@ window.onload = ()=>{
             console.log(e.target.value)
             let txt = e.target.value;
             let trim = txt.trim();
-            let regexMessage = /^[a-zA-Z0-9-.\s]+$/;
+            let regexMessage = /^[a-zA-Z0-9-?!,:.\s]+$/;
             console.log(trim)
             
             if (txt.trim() ===""){

@@ -180,90 +180,6 @@ nav {
   background: #fff;
 }
 
-.slideImg {
-  width: 100%;
-  height: 50vh;
-  position: relative;
-  left: 0;
-  right: 0;
-}
-.slideImg img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-.slideImg img.active {
-  opacity: 1;
-}
-
-.next, .previous, .nextAdmin, .previousAdmin, .nextTrtConseil, .previousTrtConseil, .nextTrtConseilConsultant, .previousTrtConseilConsultant, .nextTatto, .previousTatto, .nextAssos, .previousAssos, .nextDg, .previousDg, .nextPhp,
-.previousPhp, .nextCC, .previousCC {
-  color: #fff;
-  font-size: 2rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.next, .nextAdmin, .nextTrtConseil, .nextTrtConseilConsultant, .nextTatto, .nextAssos, .nextDg, .nextPhp, .nextCC {
-  right: 1rem;
-}
-
-.previous, .previousAdmin, .previousAdmin, .previousTrtConseilConsultant, .previousTatto, .previousAssos, .previousDg, .previousPhp, .previousCC {
-  left: 1rem;
-}
-
-.cardCustom {
-  max-width: 20rem;
-  box-shadow: 0 0 0.2em white;
-  border-radius: 5px;
-  background-color: pink;
-  color: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  padding-top: 20px;
-  margin-top: 20px;
-}
-.cardCustom .imgCard {
-  border: solid 5px #000;
-  border-radius: 5px;
-  -o-object-fit: center;
-     object-fit: center;
-  overflow: hidden;
-}
-.cardCustom .textCard {
-  font-size: 1.2em;
-  text-align: center;
-  padding-top: 20px;
-  line-height: 2.5em;
-}
-.cardCustom .titleCard {
-  color: black;
-  font-weight: 500;
-  font-size: 20px;
-}
-.cardCustom .titleCard .beforeCard {
-  color: white;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-/********MEDIA QUERY POUR ECRAN 768px  *********** */
-/******min-width 768px**************/
-@media screen and (min-width: 768px) {
-  .cardCustom {
-    margin-right: 50px;
-  }
-}
 .slider-h {
   max-width: 300px;
   margin: 10px auto;
@@ -338,6 +254,90 @@ nav {
     transform: translateX(-700%);
   }
 }
+.slideImg {
+  width: 80%;
+  height: 50vh;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+.slideImg img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.slideImg img.active {
+  opacity: 1;
+}
+
+.next, .previous, .nextAdmin, .previousAdmin, .nextTrtConseil, .previousTrtConseil, .nextTrtConseilConsultant, .previousTrtConseilConsultant, .nextTatto, .previousTatto, .nextAssos, .previousAssos, .nextDg, .previousDg, .nextPhp,
+.previousPhp, .nextCC, .previousCC {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next, .nextAdmin, .nextTrtConseil, .nextTrtConseilConsultant, .nextTatto, .nextAssos, .nextDg, .nextPhp, .nextCC {
+  right: 1rem;
+}
+
+.previous, .previousAdmin, .previousAdmin, .previousTrtConseilConsultant, .previousTatto, .previousAssos, .previousDg, .previousPhp, .previousCC {
+  left: 1rem;
+}
+
+.cardCustom {
+  max-width: 20rem;
+  box-shadow: 0 0 0.2em white;
+  border-radius: 5px;
+  background-color: pink;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.cardCustom .cardImg {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+.cardCustom .textCard {
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 20px;
+  line-height: 2.5em;
+}
+.cardCustom .titleCard {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+.cardCustom .titleCard .beforeCard {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/********MEDIA QUERY POUR ECRAN 768px  *********** */
+/******min-width 768px**************/
+@media screen and (min-width: 768px) {
+  .cardCustom {
+    margin-right: 50px;
+  }
+}
 footer {
   width: 100%;
   margin-top: 50px;
@@ -354,9 +354,9 @@ footer i {
 }
 
 .boxFooterBlack {
+  max-width: 95vw;
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
   border: solid 2px pink;
   background-color: #000;
   color: #fff;
@@ -397,13 +397,13 @@ footer i {
     text-align: center;
     margin: 10px 0;
   }
-  .footerLogo {
+  .footerContact .footerLogo {
     padding: 50px 0;
   }
-  .footerMenu {
+  .footerContact .footerMenu {
     padding-right: 20px;
   }
-  .footerMenu li {
+  .footerContact .footerMenu li {
     padding: 10px 0;
   }
 }
@@ -416,10 +416,10 @@ footer i {
     justify-content: space-around;
     align-content: center;
   }
-  .footerLogo {
+  .footerContact.footerLogo {
     padding: 0 0;
   }
-  .footerMenu {
+  .footerContact.footerMenu {
     padding-right: 0px;
   }
 }
@@ -546,7 +546,7 @@ footer i {
 .contactBg .form {
   background-color: rgba(0, 0, 0, 0.256);
   border: solid 2px;
-  max-width: 450px;
+  max-width: 650px;
   margin-top: 50px;
   padding: 0 20px;
   border-radius: 3%;
@@ -566,13 +566,5 @@ footer i {
 
 /********MEDIA QUERY POUR ECRAN 992PX  ***********/
 /******min-width 992px**************/
-@media screen and (min-width: 1200px) {
-  .contactCol {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: space-around;
-  }
-}
 /********MEDIA QUERY POUR ECRAN 1200PX  ***********/
 /******min-width 1200px**************//*# sourceMappingURL=styles.css.map */

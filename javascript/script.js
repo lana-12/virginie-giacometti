@@ -93,33 +93,33 @@ previousTattoo.addEventListener("click", () => { before(imgSliderTattoo);
 //13OrTattoo END
 
 // Assos QuatresPattes START
-let imgSliderAssos = document.getElementsByClassName("imgSliderAssos");
-// btn
-let nextAssos = document.querySelector(".nextAssos");
-let previousAssos = document.querySelector(".previousAssos");
-//au clic next
-nextAssos.addEventListener("click", () => { after(imgSliderAssos);
-});
-//au clic sur previous
-previousAssos.addEventListener("click", () => { before(imgSliderAssos);
-});
+// let imgSliderAssos = document.getElementsByClassName("imgSliderAssos");
+// // btn
+// let nextAssos = document.querySelector(".nextAssos");
+// let previousAssos = document.querySelector(".previousAssos");
+// //au clic next
+// nextAssos.addEventListener("click", () => { after(imgSliderAssos);
+// });
+// //au clic sur previous
+// previousAssos.addEventListener("click", () => { before(imgSliderAssos);
+// });
 
-// Assos QuatresPattes END
+// // Assos QuatresPattes END
 
 
-// Dicegame START
-let imgSliderDG = document.getElementsByClassName("imgSliderDg");
-// btn
-let nextDG = document.querySelector(".nextDg");
-let previousDG = document.querySelector(".previousDg");
-//au clic next
-nextDG.addEventListener("click", () => {
-    after(imgSliderDG);
-});
-//au clic sur previous
-previousDG.addEventListener("click", () => {
-    before(imgSliderDG);
-});
+// // Dicegame START
+// let imgSliderDG = document.getElementsByClassName("imgSliderDg");
+// // btn
+// let nextDG = document.querySelector(".nextDg");
+// let previousDG = document.querySelector(".previousDg");
+// //au clic next
+// nextDG.addEventListener("click", () => {
+//     after(imgSliderDG);
+// });
+// //au clic sur previous
+// previousDG.addEventListener("click", () => {
+//     before(imgSliderDG);
+// });
 
 // Dicegame START END
 
