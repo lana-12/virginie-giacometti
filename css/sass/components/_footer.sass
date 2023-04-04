@@ -3,10 +3,10 @@ footer
     margin-top: 50px
     // padding-right: 15px
     color: #000
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-content: center
+    // display: flex
+    // flex-direction: column
+    // justify-content: center
+    // align-content: center
     transition: 0.3s
     transition-property: font-weight, color
     & a:hover
@@ -17,15 +17,25 @@ footer
 
 .boxFooterBlack
     // width: 100%
-    max-width: 900px
+    display: flex
+    flex-direction: column
+    max-width: 1000px
     border: solid 2px pink
     background-color: #000
     color: #fff
     text-align: right
-    
+
+.address
+    & p, i
+        padding: 10px 10px 10px 0
+
 .footerLogo
     text-align: center
+    padding: 50px 0
 
+.footerMenu
+    & li 
+        padding: 10px 0
 .copyright
     font-size: 0.9em 
     transition: 0.3s
@@ -35,18 +45,46 @@ footer
         font-weight:800
 
 
-/********MEDIA QUERY POUR ECRAN 560PX  ***********/
-/******min-width 560px**************/
+/********MEDIA QUERY POUR ECRAN 540PX  ***********/
+/******min-width 540px**************/
 @include media($sm)
-    .boxFooterBlack
+    .footerContact
         display: flex
-        flex-direction: row
+        flex-direction: column
         justify-content: center
-        align-content: center
+        align-items: center
+        text-align: center
+        margin: 10px 0
 
+    .footerLogo
+        padding: 50px 0
+    
+    .footerMenu
+        padding-right: 20px
+        & li
+            padding: 10px 0
 
 
 /********MEDIA QUERY POUR ECRAN 992PX  ***********
 /******min-width 992px**************/
 @include media($lg)
-    
+    // .boxFooterBlack
+    //         display: flex
+    //         flex-direction: row
+    //         justify-content: center
+    //         align-content: center
+    .footerContact
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-content: center
+        
+    // .address
+    //     // margin-right: 10px
+    //     padding: 0 -100px
+
+    .footerLogo
+        padding: 0 0 
+
+    .footerMenu
+        padding-right: 0px
