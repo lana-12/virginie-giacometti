@@ -17,28 +17,32 @@
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+
     <!-- MY CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 
     <!-- Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <!-- Police -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" X-Content-Type-Options: nosniff >
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet" X-Content-Type-Options: nosniff>
-    <!-- <script src="https://use.fontawesome.com/4c7b786387.js"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+
     <title>PortFolio</title>
 </head>
-<body class="index"> 
+<body> 
     
     <header>
         
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><h1 class="titleCustom">Virginie<span class="before">Giacometti</span></h1></a>
+                <a class="navbar-brand" href="index.html"><h1 class="titleNavBar">Virginie<span class="beforeNav">Giacometti</span></h1></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +55,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="realisation.html">Réalisations</a>
+                            <a class="nav-link" href="about.html">A Propos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
@@ -68,400 +72,179 @@
 
     <main class="container">
         
-        <h1 class="text-center ">Bonjour, refonte totale de mon portofolio.</h1>
-        <h1 class="text-center ">La nouvelle version sera disponible très prochainement. </h1>
-        <section class="intro mx-auto">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="title">Développeur Junior</h2>
-                    <p class="pt-3">
-                        40ans Montpellier </p>
-                    <p class="linkGit"><a href="https://github.com/lana-12" target="_blank" title="Cliquez pour accéder à mon Github" alt="Cliquez pour accéder à mon Github"><i class=" fa-brands fa-github"></i>github.com/lana-12</a></p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="">
+        <section class="introIndex">
             <div class="row">
                 <div class="col-12">
 
-                    <div class="slider-container slider-h">
-                        <div class="slider">
+                    <div class="boxIntroIndex animationIntroIndex">
+                        <h2 class="title mt-4">Développeur Web</h2>
+                        <h3 class="titleIntro  mt-3 mb-4">Virginie Giacometti</h3>
+                        <p>
+                        40 ans Montpellier </p>
+                        <p class="gitLink">
+                            <a href="https://github.com/lana-12"  target="_blank" title="Cliquez pour accéder à mon Github" alt="Cliquez pour accéder à mon Github"><i class=" fa-brands fa-github pe-3"></i>github.com/lana-12</a>
+                        </p>
+                    </div>
+                    <div class="punchline ">
+                        <p class="text">Je suis une développeuseuse passionnée, rigoureuse et curieuse, prête à m'adapter rapidement et à travailler en collaboration pour mener à bien les projets de votre entreprise.</p>
+                        
+                    </div>
+
+                    <div class="boxIntroIndex animationLangageIndex d-flex justify-content-evenly flex-wrap title fs-5">
+                        <div class="col-4 my-auto">               
                             <p>PHP</p>
                             <p>Symfony</p>
                             <p>SQL</p>
                             <p>HTML</p>
+                        </div>
+                        <div class="col-4 my-auto">
                             <p>CSS</p>
                             <p>SASS</p>
                             <p>JavaScript</p>
                             <p>Bootstrap</p>
-                            <p>PHP</p>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="about">
-            <a href="#"><h3 class="title titleIndex">Présentation</h3></a>
-
-            <section class=" aboutParagraph mx-auto">
-                <div class="row">
-                    <div class="col-12">
-
-                        <p class="paragraph  pb-3">
-                            Attirée par l’informatique depuis longtemps, mon congé parental m’a permis de changer radicalement de voie professionnelle. J’ai mis tout en œuvre pour percer dans cette voie et j'ai pris beaucoup de plaisir à développer divers projets. 
-                        </p>
-                        <p class="paragraph">
-                            En Octobre 2021, je décide de franchir le cap en m’inscrivant dans une formation afin d’obtenir le Titre Professionnel de Développeur Web, Web Mobile. Cela a confirmé mon désir de devenir Développeur.
-                            
-                        </p>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class=" aboutParagraph mx-auto">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="paragraph pb-3">
-                            Ma formation, complétée par ma passion pour le Web et l'informatique, me permettent d'acquérir chaque jour les connaissances techniques et pratiques indispensables à l'exercice de ce métier. Je suis motivée, autonome, curieuse et très investie. Mes différents projets sont développés avec rigueur et passion. Actuellement, je suis disponible pour une future collaboration.
-                        </p>
-                        <p class="paragraph pb-3"> 
-                            J’ai obtenu mon diplôme en Mars 2023 mais je continue d’enrichir mes compétences dans différents langages tels que PHP, Symfony, SQL, JavaScript. 
-                        </p>
-        
-                        <p class="paragraph">
-                            Tout au long de ma formation, j’ai pu concevoir différents projets pour valider les compétences apprises. 
-                        </p>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class=" aboutParagraph mx-auto">
-                <div class="row">
-                    <div class="col-12">
-                        <p class="paragraph">
-                            Je souhaiterai trouver une entreprise qui me donnerai la possibilité d'acquérir ma première expérience professionnelle en tant que développeur. Je saurai m'intégrer à votre équipe et je m'adapterai à vos conditions de travail.
-                        </p>
-                        
-                        <p class="paragraph">
-                            En rejoignant votre équipe, je mettrai mon savoir-faire en pratique tout en continuant d’apprendre. Je prendrai soin d’assimiler les différents besoins de votre société et saurai facilement m’intégrer. 
-                        </p>
-                    </div>
-                </div>
-            </section>      
-
-        </section>
-<hr class="separatorWhite my-5 ">
-
-        <section class="about ">
-            <h4 class="">Pour la gestion de mes projets</h4>
-            <div class="row">
-                <div class="col-12">
-                    <div class="aboutParagraph mx-auto">
-                        <ol class="listIndex pt-3">
-                            <li class="listOrd "><u>Analyser les besoins du client :</u>
-                                <ul class="py-3 pb-5" >
-                                    <li>Représentation des fonctionnalités sous forme d’<i>User Story</i></li>
-                                    <li>Intégration de <i>Personas</i> aux Users Stories</li>
-                                    <li>Elaboration de <i>Wireframes</i> et de planche graphique</li>
-                                    <li>Réalisation de modèle d’interface réaliste <i>Mockups</i></li>
-                                </ul>
-                            </li>
-                            <li class="listOrd "><u>Développer le projet :</u>
-                                <ul class="py-3 pb-5">
-                                    <li>Composition de différents <i>Diagrammes</i></li>
-                                    <li>Conception de la Base de Données: <i>Méthode Merise</i> </li>
-                                    <li>Développer le projet avec le pattern <i>MCV</i></li>
-                                </ul>
-                            </li>
-                            <li class="listOrd "><u>Langages et Frameworks utilisés: </u>
-                                <ul class="py-3 ">
-                                    <li>Php - Symfony</li>
-                                    <li>Sql</li>
-                                    <li>JavaSript</li>
-                                    <li>Html</li>
-                                    <li>Css - Sass - Bootstrap</li>
-                                </ul> 
-                            </li>
-                        </ol>
-
-                    </div>
-                </div>
-            </div>
-        </section>                       
+<hr class="separatorBlack">
 
         <div class="mb-5 d-flex justify-content-center ">
             <a href="img/CV-développeurWeb.pdf" type="button" class="btn btnCustom me-5" download="CV-développeurWeb" title="Cliquez pour visualiser mon CV" alt="Cliquez pour visualiser mon CV">Mon CV
             </a>
             
-            <a href="https://github.com/lana-12" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+            <a href="https://github.com/lana-12" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">Mon GitHub</a>
         </div>
 
-<hr class="separatorWhite">
-
-        <section>
+        <section class="projetIndex">
             <div class="row">
                 <div class="col-12">
-                    <h3 class="title titleIndex pink">Réalisations</h3>
 
-                    <div class="mb-5 d-flex justify-content-end justify-content-lg-center">
-                        <a href="realisation.html" title="Cliquez pour accéder à mes réalisations" alt="Cliquez pour accéder à mes réalisations" class= "btn btnCustom mt-5 ">
-                            Voir toutes mes réalisations
-                        </a> 
-                    </div>
-                    <h4 class="fs-1 underline title titleIndex">BackEnd</h4>
+                    <h2 class="titleProjet ">Mes Projets</h2>
 
-                    <section class="myProject ">
-                        <div>
-                            <a href="https://trt-conseil-recrutement.herokuapp.com/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site"><h4 class="titleCustom text-center">TRT<span class="before">Conseil</span></h4></a>
+                        <h3 class="fs-1 underline title ">BackEnd</h3>
 
-                            <div class="boxId text-center  my-5">
-                                <p class="p-4">La société TRTConseil(Société Fictive) souhaite mettre en place un outil permettant à un plus grand nombre de recruteurs et de candidats de trouver leur bonheur.</p >
-                                <p class="pb-3">Cette application est accessible par tous mais si vous souhaitez postuler ou recruter, une inscription est obligatoire.</p>
-                            </div>
+                        <div class="d-flex justify-content-center flex-wrap container">
 
-                            <div class="slideImg mx-auto">
-                                <img class="imgSliderClientTRTConeil img-fluid active"loading="lazy" src="./img/screenshot/TRTConseil/home.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/login.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/register.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/offre.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/listCandidat.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/navbar.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/contact.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
+                            <div class="boxProjetIndex me-md-5">
+                                <h4 class="titleBoxProjet">TrtConseil</h4>
 
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/recruteur.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/espacerecuiter.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/recruteur2.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/poster.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/annonceNonActive.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/messageerrorp.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
+                                <a href="realisation/trtconseil.html" title="Lien pour accéder au détail" alt="Lien pour accéder au détail"><img class="fristImg img-fluid" loading="lazy" src="./img/screenshot/TRTConseil/home.png" alt="Screenshot TRTConseil Page d'Accueil" title="Screenshot TRTConseil Page d'Accueil"></a>
 
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/candidat.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/candidat1.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/candidat2.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/candidature.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/dashboardCandidat.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/profilcandidat.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderClientTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/profilcandidatok.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-
-                                <div class="nextTrtConseil">
-                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                <div class="mt-3 d-flex justify-content-evenly">
+                                    <a href="https://trt-conseil-recrutement.herokuapp.com/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom ">Site</a>
+                                    <a href="https://github.com/lana-12/TRT-Conseil" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+                                    <a href="realisation/trtconseil.html" title="Lien pour accéder au détail" alt="Lien pour accéder au détail" class="btn btnCustom">Détail</a>
                                 </div>
 
-                                <div class="previousTrtConseil">
-                                    <i class="fa-solid fa-circle-chevron-left"></i>
-                                </div>
-                            </div>
-                            
-                            <div class="mt-5 d-flex justify-content-center">
-                                <a href="https://trt-conseil-recrutement.herokuapp.com/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom me-5">Site</a>
-                                <a href="https://github.com/lana-12/TRT-Conseil" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
                             </div>
 
-                            <div class="paragraph2 boxId mt-5 pt-3 pb-3 ">
-                                <p class="">Code d'Accès:
-                                    <p class="underline text-center">Pour un Recruteur :
-                                        <p>Id : recruteur1@exemple.fr</p>
-                                        <p>MdP : recruteur1</p>
-                                    </p>
-                                <br>
-                                    <p class="underline text-center">Pour un Candidat :
-                                        <p>Id : candidat1@exemple.fr</p>
-                                        <p>MdP : candidat1</p>
-                                        
-                                    </p>
-                                </p>        
-                            </div>
+                            <div class="boxProjetIndex me-md-5">
+                                <h4 class="titleBoxProjet">FitnessDrive</h4>
 
+                                <a href="realisation/fitnessdrive.html"  title="Lien pour accéder au détail" alt="Lien pour accéder au détail" ><img class="fristImg img-fluid" loading="lazy" src="./img/screenshot/fitnessDrive/Login-Mobile.png" alt="Screenshot page Login" title="Screenshot page Login"></a>
 
-                            <h5 class="fs-3  text-center underline my-5">Son Panel d'administrateur</h5>
-                            <div class="slideImg mx-auto">
-                                <img class="imgSliderConsultantTRTConeil img-fluid active "loading="lazy" src="./img/screenshot/TRTConseil/panel.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/consultant.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/consultant2.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/consultant3.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/consultant4.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/validuser.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/mail.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/mailcreate.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/mailactive.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/mailnewcandidacy.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/mailRefus.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-                                <img class="imgSliderConsultantTRTConeil img-fluid "loading="lazy" src="./img/screenshot/TRTConseil/mailcontact.png" alt="Screenshot TRTConseil" title="Screenshot TRTConseil">
-
-                                <div class="nextTrtConseilConsultant">
-                                    <i class="fa-solid fa-circle-chevron-right"></i>
+                                <div class="mt-3 d-flex justify-content-evenly">
+                                    <a href="https://fitnessdrive.fly.dev/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom ">Site</a>
+                                    <a href="https://github.com/lana-12/ecf-fitnessDrive" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+                                    <a href="./realisation/fitnessdrive.html"  title="Lien pour accéder au Détail" alt="Lien pour accéder au Détail" class="btn btnCustom">Détail</a>
                                 </div>
 
-                                <div class="previousTrtConseilConsultant">
-                                    <i class="fa-solid fa-circle-chevron-left"></i>
+                            </div>
+
+                            <div class="boxProjetIndex me-md-5">
+                                <h4 class="titleBoxProjet">Projet PHP</h4>
+                                <a href="realisation/php.html"  title="Lien pour accéder au détail" alt="Lien pour accéder au détail" ><img class="fristImg img-fluid" loading="lazy" src="./img/screenshot/php/phphome.png" alt="Screenshot page Localhost" title="Screenshot page Localhost"></a>
+
+
+                                <div class="mt-3 d-flex justify-content-evenly">
+                                    
+                                    <a href="https://github.com/lana-12/php" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+                                    <a href="./realisation/php.html" title="Lien pour accéder au Détail" alt="Lien pour accéder au Détail" class="btn btnCustom">Détail</a>
                                 </div>
+
                             </div>
 
-                            <div class="mt-5 d-flex justify-content-center">
-                                <a href="https://trt-conseil-recrutement.herokuapp.com/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom me-5">Site</a>
-                                <a href="https://github.com/lana-12/TRT-Conseil" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
-                            </div>
-
-                            <div class="boxId mt-5 pt-3 pb-3 text-center">
-                                <p >Réalisation de ce panel en PHP Symfony sans bundle.</p>
-                                <p >L'admin peuvent valider des comptes d'utilisateur, des candidatures et des offres d'emploi.</p>
-                                <p class="underline ">Code d'Accès:</p>
-                                <p >Aucun code d'administrateur ne peut être fourni pour des raisons de sécurité.</p>
-                            </div>
-                    </section>
-
-                    <div class="d-flex justify-content-end justify-content-lg-center">
-                        <a href="realisation.html" title="Cliquez pour accéder à mes réalisations" alt="Cliquez pour accéder à mes réalisations" class= "btn btnCustomR mt-5 ">
-                            Voir toutes mes réalisations
-                        </a> 
-                    </div>
-
-<hr class="separatorWhite">
-
-                    <section class="myProject">
-                        <a href="https://fitnessdrive.fly.dev/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" ><h4 class="titleCustom text-center mb-5">Fitness<span class="before">Drive</span></h4></a>
-                        <p class="nb text-center">NB: Cette application est longue à s'ouvrir et souvent il faut recharger la page plusieurs fois. Je suis sûr le coup, mais une vidéo d'une démonstration est en cours de réalisation !</p>
-                        <div class="boxId text-center my-5">
-                            <p class="p-3 pt-4">Ce projet est une application de gestion de salle de sport. L’équipe technique de la marque doit pouvoir ajouter des nouveaux franchisés, leurs structures et leurs différentes permissions. Les franchisés et leurs structures auront un accès en lecture uniquement.</p>
-                        </div>
-
-                        <div class="slideImg mt-5  mx-auto">
-                            <img class="imgSliderClient img-fluid active" loading="lazy" src="./img/screenshot/fitnessDrive/Login-Mobile.png" alt="Screenshot page Login" title="Screenshot page Login">
-                            <img class="imgSliderClient img-fluid " loading="lazy" src="./img/screenshot/fitnessDrive/Show-Franchise-Mobile.png" alt="Screenshot show Franchise" title="Screenshot show Franchise">
-                            <img class="imgSliderClient img-fluid " loading="lazy" src="./img/screenshot/fitnessDrive/Show-Structure-Mobile.png" alt="Screenshot show Structure" title="Screenshot show Structure">
-                            <img class="imgSliderClient img-fluid " loading="lazy" src="./img/screenshot/fitnessDrive/Login-Desktop.png" alt="Screenshot page Login " title="Screenshot page Login" >
-                            <img class="imgSliderClient img-fluid" loading="lazy" src="./img/screenshot/fitnessDrive/Show-Franchise-Desktop.png" alt="Screenshot show Franchise" title="Screenshot show Franchise">
-                            <img class="imgSliderClient img-fluid"  loading="lazy" src="./img/screenshot/fitnessDrive/Show-Structure-Desktop.png" alt="Screenshot show Structure" title="Screenshot show Structure">
-                            <div class="next">
-                                <i class="fa-solid fa-circle-chevron-right"></i>
-                            </div>
-
-                            <div class="previous">
-                                <i class="fa-solid fa-circle-chevron-left"></i>
-                            </div>
                         </div>
                         
-                        <div class="mt-5 d-flex justify-content-center">
-                            <a href="https://fitnessdrive.fly.dev/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom me-5">Site</a>
-                            <a href="https://github.com/lana-12/ecf-fitnessDrive" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
-                        </div>
+                        <hr class="separatorBlack my-5">
 
-                        <div class="paragraph2 boxId mt-5 pt-3 pb-3 ">
-                            <p class="">Code d'Accès uniquement en lecture:
-                                <p class="underline text-center">Pour une franchise :
-                                    <p>Id : ibanez@exemple.fr</p>
-                                    <p>MdP : ibanezibanez</p>
-                                </p>
-                            <br>
-                                <p class="underline text-center">Pour une structure :
-                                    <p>Id : trinhduc@exemple.fr</p>
-                                    <p>MdP : trinhductrinhduc</p>
-                                </p>
-                            </p>        
-                        </div>
+                        <h3 class="fs-1 underline title ">FrontEnd</h3>
 
-                        <h5 class="fs-3 text-center underline my-5">Son Panel d'administrateur</h5>
+                        <div class="d-flex justify-content-center flex-wrap container">
 
-                        <div class="slideImg mx-auto">
-                            <img class="img-fluid imgSliderAdmin active" loading="lazy" src="./img/screenshot/fitnessDrive/Home-Admin-Mobile.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
-                            <img class="img-fluid imgSliderAdmin" loading="lazy" src="./img/screenshot/fitnessDrive/ListFranchise-Admin-Mobile.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
-                            <img class="img-fluid imgSliderAdmin " loading="lazy" src="./img/screenshot/fitnessDrive/FormCréation-Admin-Mobile.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
-                            <img class="img-fluid imgSliderAdmin" loading="lazy" src="./img/screenshot/fitnessDrive/Home-Admin-Desktop.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
-                            <img class="img-fluid imgSliderAdmin" loading="lazy" src="./img/screenshot/fitnessDrive/ListFranchise-Admin-Desktop.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
-                            <img class="img-fluid imgSliderAdmin " loading="lazy" src="./img/screenshot/fitnessDrive/FormCréation-Admin-Desktop.png" alt="Screenshot Panel d'Admin" title="Screenshot Panel d'Admin">
+                            <div class="boxProjetIndex me-md-5">
+                                <h4 class="titleBoxProjet">13'Or Tattoo</h4>
 
-                            <div class="nextAdmin">
-                                <i class="fa-solid fa-circle-chevron-right"></i>
+                                <a href="./realisation/13ortattoo.html" title="Lien pour accéder au détail" alt="Lien pour accéder au détail"><img class="fristImg img-fluid" loading="lazy" src="./img/screenshot/13OrTattoo/home1.png" alt="Screenshot 13'Or Tattoo Page d'Accueil" title="Screenshot 13'Or Tattoo Page d'Accueil"></a>
+
+                                <div class="mt-3 d-flex justify-content-evenly">
+                                    <a href="https://13-or-tattoo.netlify.app/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom ">Site</a>
+                                    <a href="https://github.com/lana-12/13-Or-Tattoo" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+                                    <a href="./realisation/13ortattoo.html" title="Lien pour accéder au détail" alt="Lien pour accéder au détail" class="btn btnCustom">Détail</a>
+                                </div>
+
                             </div>
 
-                            <div class="previousAdmin">
-                                <i class="fa-solid fa-circle-chevron-left"></i>
-                            </div>
-                        </div>
-                    
-                        <div class="mt-5 d-flex justify-content-center">
-                            <a href="https://fitnessdrive.fly.dev/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom me-5">Site</a>
-                            <a href="https://github.com/lana-12/ecf-fitnessDrive" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
-                        </div>
-                        <div class="boxId mt-5 pt-3 pb-3 text-center text-black">
-                            <p >Réalisation de ce panel en PHP Symfony sans bundle.</p>
-                            <p >L'admin peuvent ajouter/supprimer/modifier.</p>
-                            <p class="underline ">Code d'Accès:</p>
-                            <p >Aucun code d'administrateur ne peut être fourni pour des raisons de sécurité.</p>
-                        </div>
-                        
-                    </section>
+                            <div class="boxProjetIndex me-md-5">
+                                <h4 class="titleBoxProjet">CharlesCantin - Photographe</h4>
 
-                    <div class="d-flex justify-content-end justify-content-lg-center">
-                        <a href="realisation.html" title="Cliquez pour accéder à mes réalisations" alt="Cliquez pour accéder à mes réalisations" class= "btn btnCustomR mt-5 ">
-                            Voir toutes mes réalisations
-                        </a> 
-                    </div>
-<hr class="separatorWhite">
-                    <h4 class="fs-1 underline title titleIndex">FrontEnd</h4>
+                                <a href="./realisation/charlescantin.html"  title="Lien pour accéder au détail" alt="Lien pour accéder au détail" ><img class="fristImg img-fluid" loading="lazy" src="./img/screenshot/charlesCantin/home.jpg" alt="Screenshot CharlesCantin- Photographe" title="Screenshot page Login"></a>
 
-                    <section class="myProject">
-                        <a href="https://13-or-tattoo.netlify.app/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site"><h4 class="titleCustom text-center ">13'Or<span class="before">Tattoo</span></h4></a>
-                        <p class="titleCustom text-center text-dark">Site Vitrine</p>
+                                <div class="mt-3 d-flex justify-content-evenly">
+                                    <a href="https://photographe-cantin-charles.netlify.app/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom ">Site</a>
+                                    <a href="https://github.com/lana-12/Evaluation-Front-Charles-Cantin" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+                                    <a href="./realisation/charlescantin.html" title="Lien pour accéder au Détail" alt="Lien pour accéder au Détail" class="btn btnCustom">Détail</a>
+                                </div>
 
-                        <div class="boxId text-center my-5">
-                            <p class="p-3 pt-4 text-black">Ce projet est site vitrine pour un salon de Tatouage situé à St Bres. Ma cliente voulait un site très <strong class="pink">girly</strong> qui en harmonie avec son salon. Ce projet a été développé avec Html & CSS.</p>
-                        </div>
-                        <div class="my-5 d-flex justify-content-center">
-                            <a href="https://13-or-tattoo.netlify.app/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustomR text me-4">Site</a>
-                            <a href="https://github.com/lana-12/13-Or-Tattoo" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustomR text ">GitHub</a>
-                        </div>
-                        
-
-                        <div class="slideImg mx-auto">
-                            <img loading="lazy" class="imgSliderTattoo img-fluid active" src="./img/screenshot/13OrTattoo/home1.png" alt="Screenshot page home" title="Screenshot page home">
-                            <img loading="lazy" class="imgSliderTattoo img-fluid " src="./img/screenshot/13OrTattoo/gallery-mobile.png" alt="Screenshot gallery MobileFirst" title="Screenshot gallery MobileFirst">
-                            <img loading="lazy" class="imgSliderTattoo img-fluid " src="./img/screenshot/13OrTattoo/gallery-tablette.png" alt="Screenshot gallery tablette" title="Screenshot gallery tablette">
-                            <img loading="lazy" class="imgSliderTattoo img-fluid " src="./img/screenshot/13OrTattoo/about-mobile.png" alt="Screenshot about MobileFirst " title="Screenshot about MobileFirst" >
-                            <img loading="lazy" class="imgSliderTattoo img-fluid" src="./img/screenshot/13OrTattoo/about-desktop.png" alt="Screenshot about Desktop" title="Screenshot about Desktop">
-                            <img loading="lazy" class="imgSliderTattoo img-fluid" src="./img/screenshot/13OrTattoo/contact.png" alt="Screenshot page contact" title="Screenshot page contact">
-                            <div class="nextTatto">
-                                <i class="fa-solid fa-circle-chevron-right"></i>
                             </div>
 
-                            <div class="previousTatto">
-                                <i class="fa-solid fa-circle-chevron-left"></i>
+                            <div class="boxProjetIndex me-md-5">
+                                <h4 class="titleBoxProjet">DiceGame</h4>
+                                <a href="./realisation/dicegame.html" title="Lien pour accéder au site" alt="Lien pour accéder au site" ><img class="fristImg img-fluid" loading="lazy" src="./img/screenshot/dicegame/homeDG-mobile.png" alt="Screenshot page home MobileFirst" title="Screenshot page home MobileFirst"></a>
+                                <div class="mt-3 d-flex justify-content-evenly">
+                                    
+                                    <a href="https://lana-12.github.io/eval-JS-DiceGame/" target="_blank" title="Lien pour accéder au Détail" alt="Lien pour accéder au Détail" class="btn btnCustom">Site</a>
+                                    <a href="https://github.com/lana-12/eval-JS-DiceGame" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+                                    <a href="./realisation/dicegame.html" title="Lien pour accéder au Détail" alt="Lien pour accéder au Détail" class="btn btnCustom">Détail</a>
+                                </div>
+
                             </div>
-                        </div>
-                        
-                        <div class="my-5 d-flex justify-content-center">
-                            <a href="https://13-or-tattoo.netlify.app/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustomR text me-4">Site</a>
-                            <a href="https://github.com/lana-12/13-Or-Tattoo" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustomR text ">GitHub</a>
+
+                            <div class="boxProjetIndex me-md-5">
+                                <h4 class="titleBoxProjet">Quatre Pattes</h4>
+                                <a href="./realisation/quatrepattes.html" title="Lien pour accéder au site" alt="Lien pour accéder au site" ><img class="fristImg img-fluid" loading="lazy" src="./img/screenshot/assos/home-mobile.png" alt="Screenshot page Home" title="Screenshot page Home"></a>
+
+
+                                <div class="mt-3 d-flex justify-content-evenly">
+                                    
+                                    <a href="https://quatres-pattes-virginie-giacometti.netlify.app/" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">Site</a>
+                                    <a href="https://github.com/lana-12/eval-assos" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+                                    <a href="./realisation/quatrepattes.html" title="Lien pour accéder au Détail" alt="Lien pour accéder au Détail" class="btn btnCustom">Détail</a>
+                                </div>
+
+                            </div>
+
                         </div>
 
-                    </section>
-
-                    
-                    <div class="d-flex justify-content-end justify-content-lg-center">
-                        <a href="realisation.html" title="Cliquez pour accéder à mes réalisations" alt="Cliquez pour accéder à mes réalisations" class= "btn btnCustomR mt-5 ">
-                            Voir toutes mes réalisations
-                        </a> 
-                    </div>
                 </div>
-            </div>  
+            </div>
         </section>
+
     </main>
-    <hr class="separatorWhite">
 
     <footer class="container">
-        <section class="boxFooterBlack container">
+        <section class="boxFooterBlack ">
             <div class="row">
                 <div class="col-12 ">
-                    <!-- <h4 class="titleIndex title text-center">Me Contacter</h4> -->
+
                     <div class="footerContact">
                         <div class="address">
                             <p>
-                                <a class="" href="mailto:giacomettivirginie@gmail.com" title="Cliquez pour me contacter par mail" alt="Cliquez pour me contacter par mail"><i class=" fa-solid fa-envelope"></i>
+                                <a href="mailto:giacomettivirginie@gmail.com" title="Cliquez pour me contacter par mail" alt="Cliquez pour me contacter par mail"><i class=" fa-solid fa-envelope"></i>
                                 giacomettivirginie@gmail.com
                                 </a>
                             </p>
@@ -469,48 +252,50 @@
                                 <a href="tel:0618568698" title="Contact téléphonique - Cliquez pour appeler" alt="Contact téléphonique - Cliquez pour appeler"><i class="fa fa-phone "></i>0618568698</a>
                             </p>
                         
-                            <a href="https://www.linkedin.com/in/virginie-giacometti-a88a01220/" target="_blank" title="Lien vers Linkedin" style="font-size: 25px;"><i class="fa-brands reseau fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/virginie-giacometti-a88a01220/" target="_blank" title="Lien vers Linkedin" style="font-size: 25px;"><i class="fa-brands  fa-linkedin"></i></a>
                         
-                            <a href="https://github.com/lana-12" target="_blank" title="Cliquez pour accéder à mon Github" alt="Cliquez pour accéder à mon Github"  style="font-size: 25px;"><i class=" fa-brands reseau fa-github"></i></a>
+                            <a href="https://github.com/lana-12" target="_blank" title="Cliquez pour accéder à mon Github" alt="Cliquez pour accéder à mon Github"  style="font-size: 25px;"><i class=" fa-brands  fa-github"></i></a>
                         </div>
 
-                        <div class=" footerLogo  ">
+                        <div class=" footerLogo ">
                             <img class="logo img-fluid rounded " src="./img/logo.png" srcset="" alt="Logo de Virginie Giacometti" title="Logo de Virginie Giacometti">
                         </div>
             
                         <div class="footerMenu">
                             <ul>
-                                <li><a href="#">Accueil</a></li>
-                                <li><a href="realisation.html">Réalisations</a></li>
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="about.html" >A Propos</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a href="img/CV-développeurWeb.pdf">CV</a></li>
                             </ul>
                         </div>
-            
-                        
                     </div>
                     
                 </div>
             </div>
         </section>
 
-<hr class="separatorBlack">
 
         <section class="copyright">
             <div class="row">
                 <div class="col-12 ">
-                    <p class="text-center copyright">Copyright @ 2023 All rights reserved by :
+
+                    <p class=" copyright">Copyright @ 2023 All rights reserved by :
                         <a href="mailto:giacomettivirginie@gmail.com" title="Cliquez pour m'envoyer un email" alt="Cliquez pour m'envoyer un email"><strong>Virginie Giacometti</strong></a>
                     </p>
+
                 </div>
             </div>
         </section>
+
     </footer>
     
     <!-- JQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <!-- My JavaScript -->
     <script src="/javascript/functionJs.js"></script> 
     <script src="/javascript/script.js"></script> 

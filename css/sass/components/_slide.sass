@@ -1,47 +1,71 @@
-.slider-h 
-    max-width: 300px
-    margin: 10px auto
-    overflow: hidden
-    // border: 1px solid #f1f1f1
-.slider-h .slider 
-    animation: slider-h 20s infinite ease-in-out
-    display: flex
+/* Slideshow container */
+.slideshow 
+    max-width: 70%
+    max-height: 50vh
+    position: relative
+    top: 10px
+    margin: auto
 
-.slider-h p 
-    flex-shrink: 0
-    padding: 20px 0
+
+/* Hide the images by default */
+.slides, .slidesAdm, .slidesEspace
+    display: none
+    width: 100%
+    height: auto
+    text-align: center
+    & img
+        width: 400px
+        max-height: 300px
+        object-fit: contain
+
+.activeImg
+    display: block
+    opacity: 1
+
+/* Next & previous buttons */
+.prev, .next, .prevAdm, .nextAdm, .prevEspace, .nextEspace
+    cursor: pointer
+    position: absolute
+    top: 50%
+    width: auto
+    margin-top: -22px
+    padding: 16px
+    color: white
+    font-weight: bold
+    font-size: 1.5em
+    transition: 0.6s ease
+    border-radius: 0 3px 3px 0
+    user-select: none
+    &:hover
+        background-color: rgba(0,0,0,0.8)
+
+/* Position the "next button" to the right */
+.next, .nextAdm, .nextEspace
+    right: 0
+    border-radius: 3px 0 0 3px
+    
+
+
+/* Caption text */
+.caption 
+    color: #000
+    font-size: 15px
+    font-family: $text
+    padding: 8px 12px
+    position: relative
+    bottom: 8px
     width: 100%
     text-align: center
-    font-size: 45px
-    color: #f1f1f1
 
-// Si on veut faire glisser vers la droite
-// Il faut aussi changer l'animation(transform) en valeurs positives
-// flex-direction: row-reverse
-// 5% par transition, nombre choisi arbitrairement.
-//    reste divisé par nb de pauses
-//    80(%) / 4 = 20(%) par pause
-@keyframes slider-h 
-    8%
-        transform: translateX(0)
-  
-    21% 
-        transform: translateX(-100%)
 
-    34% 
-        transform: translateX(-200%)
-  
-    47%
-        transform: translateX(-300%)
+/* Fading animation */
+.fadeImg 
+    animation-name: fadeImg
+    animation-duration: 1.5s
 
-    60%
-        transform: translateX(-400%)
 
-    73% 
-        transform: translateX(-500%)
-
-    86%
-        transform: translateX(-600%)
-
-    100%
-        transform: translateX(-700%)
+@keyframes fadeImg 
+    from 
+        Opacity: .5
+    to 
+        Opacity: 1

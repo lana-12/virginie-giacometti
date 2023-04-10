@@ -1,13 +1,13 @@
 // imgSlide
 
-//Permettra de savoir quelle image afficher
+
 let etape = 0;
 
-// function remove class active img
+// function remove class activeImg img
 function activImg(img) {
     for (let i = 0; i < img.length; i++) {
     //Pour img courante supp class active
-    img[i].classList.remove("active");
+    img[i].classList.remove("activeImg");
     }
 }
 // function nextSlide
@@ -18,7 +18,7 @@ const after = (img) => {
         etape = 0;
     }
     activImg(img);
-    img[etape].classList.add("active");
+    img[etape].classList.add("activeImg");
 };
 
 //function previousSlide
@@ -29,5 +29,5 @@ const before = (img) => {
         etape = img.length - 1;
     }
     activImg(img);
-    img[etape].classList.add("active");
+    img[etape].classList.add("activeImg");
 };

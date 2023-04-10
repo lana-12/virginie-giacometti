@@ -1,18 +1,10 @@
-// STYLE TITLE start
-.titleCustom
-    font-size: 20px
-    font-weight: 800
-    font-family: $title
-    & .before
-        color: pink
-        text-transform: uppercase
-
-.titleIndex
-    font-size: 2.6em
+// Style Text Start
+.center
     text-align: center
-    margin: 20px 0
-    padding-bottom: 20px
-// STYLE TITLE end
+.underline
+    text-decoration: underline
+// Style Text End
+    
 
 // Style Police start
 .title
@@ -22,47 +14,27 @@
 // Style Police end
 
 
-    
-// Style color start
-.pink
-    color: pink
-// Style color end
-
+//Style Separator start
+.separatorBlack
+    height: 2px
+    width: 50%
+    border: none
+    background: #000
+    margin: 30px auto
+//Style Separator end
 
 // STYLE btn start
 .btnCustom
-    background-color: pink
+    background-color: $blueD
+    font-family: $text
+    color: #fff
     transition: 0.5s
     transition-property: background-color, color
     &:hover
-        background-color: black
-        color: pink
-
-.btnCustomR
-    background-color: black
-    color: white
-    transition: 0.5s
-    transition-property: background-color, color
-    &:hover
-        background-color: white
-        color: black
-
-.btnContact
-    background-color: #fff
-    color: #000
-    border: solid 2px
-    font-weight: 600
-    border-radius: 3%
-    transition: 0.3s
-    transition-property: color, background-color
-    text-align: center
-    margin: auto
-    display: flex
-    align-items: center
-    &:hover 
-        background-color: pink
+        background-color: $pink
         color: #000
 // STYLE btn end
+    
 
 // Style logo start
 .logo
@@ -74,64 +46,8 @@
     box-shadow: 10px 5px 5px white
 // Style logo end
 
-// Icone page Contact start
-.icon
-    padding-right: 10px
-// Icone page Contact end
 
-// Style General start
-
-.underline
-    text-decoration: underline
-
-.paragraph
-    font-size: 1.2em
-    padding: 0 10px
-    text-align: justify
-    text-indent: 10%
-
-.paragraph2
-    text-align: justify
-    text-indent: 10%
-    padding: 0 10px
-    font-size: 1em
-
-
-.shadowWhite
-    text-shadow: 1px 1px 2px #fff, 0 0 1em #fff, 0 0 0.2em #fff
-    color: #000
-
-.shadowBlack
-    text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000
-    color: #fff
-
-// Style General end
-
-//Style Copyright start
-.separatorWhite
-    height: 3px
-    border: none
-    background: #fff
-    width: 50%
-    margin: 30px auto
-    
-.separatorBlack
-    height: 2px
-    border: none
-    background: #000
-
-//Style Copyright end
-
-
-nav
-    background-color: #000
-    box-shadow: 1px 1px 3px pink
-
+//Détail fitnessdrive
 .nb
     font-size: 0.6em
 
-/********MEDIA QUERY POUR ECRAN 992PX  ***********/
-/******min-width 992px**************/
-@include media($lg)
-    .icon
-        padding-right: 10px

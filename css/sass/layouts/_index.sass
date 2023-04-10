@@ -1,111 +1,102 @@
-.index
-    background: rgb(255,192,203)
-    background: linear-gradient(0deg, rgba(255,192,203,1) 0%, rgba(0,0,0,1) 55%)
-    color: #fff
-    height: 100%
-    font-family: $text
+// IntroIndex start
+.introIndex 
+    position: relative
+    width: 100%
+    height: 100vh
+    margin-top: 6px
 
-.intro
-    display: flex
-    justify-content: center
-    align-content: center
-    background-color: rgba(0, 0, 0, 0.756)
-    border: solid black 1px
-    border-radius: 5px
-    box-shadow: inset 0 0 1em pink, 0 0 2em black
-    margin: 30px
-    padding: 20px 10px
-    max-width: 500px
-    & p, i 
-        color: pink
-        padding-right: 10px
-        font-size: 1.1em
-        transition: 0.5s
-        transition-property: color
-    & p
-        &:hover
-            color: #fff
-            font-weight: 600
-            
+.boxIntroIndex
+    width: 80%
+    height: 30vh
+    border: solid 2px #fff
+    border-radius: 3px
+    background-color: pink
+    color: #000
+    text-align: center
 
+.titleIntro
+    font-size: 20px
+    font-weight: 800
+    font-family: $title
+    color: #000
 
-.about
-    color: #fff
-    & h3
-        color: pink
-    & h4
-        font-size: 1.8em
-        padding-bottom: 10px
-        text-align: center
-    & .aboutParagraph
-        display: flex
-        justify-content: center
-        align-content: center
-        background-color: rgba(0, 0, 0, 0.756)
-        border: solid black 1px
-        border-radius: 5px
-        box-shadow: inset 0 0 1em pink, 0 0 2em black
-        margin: 30px
-        margin-bottom: 60px
-        padding: 25px
-        max-width: 900px
+.gitLink
+    transition: 0.5s
+    transition-property: color, font-weight
+    &:hover
+        color: #fff
+        font-weight: 600
 
+.animationIntroIndex
+    position: absolute
+    left: 50% 
+    top: 3%
+    transform: translateY(-90%)
+    transform: translateX(-50%)
+    animation: introIndex 2.5s ease forwards
 
-.listIndex
-    font-size: 1.2em
-    text-align: justify 
-    & .listOrd
-        color: pink 
-        & li 
-            list-style-type: circle
-            padding: 10px 0
-            color: #fff
+@keyframes introIndex
+    from
+        Left: -100% 
+    to
+        Left: 50% 
 
+.punchline
+    position: absolute
+    top: 36%
+    left: 10%
+    right: 10%
+    text-align: center
+    font-weight: 600
+    font-size: 1.1em
 
-.myProject
-    font-size: 1.3em
-    height: auto
-    // border: solid 2px pink
-    // text-indent: 10%
-    margin-top: 40px
-    & h4 
-        font-size: 1.4em
-    & h5, h6 
-        font-size: 0.7em
+.animationLangageIndex
+    position: absolute
+    right: -100% 
+    top: 72%
+    transform: translateY(-50%)
+    animation: langageIndex 5s ease forwards
 
-.boxId
-    border: solid 2px pink
-    box-shadow: 0 0 5px white 
-    margin: 100px 0
-    max-width: 500px
-    margin: auto
+@keyframes langageIndex
+    from
+        Right : -100% 
+    to
+        Right: 10% 
 
-// img
-//     width: 400px
-//     height: 400px
-//     object-fit: scale-down
+// IntroIndex end
 
-// .imgIndex
-//     width: 400px
-//     height: 400px
-//     object-fit: contain
-//test galery =>non
-// .gallery
-    // display: flex
-    // justify-content: space-around
-    // align-content: center
-//     max-width: 1300px
-//     margin: 20px auto 0
-//     margin-bottom: 10px
+// ProjetIndex start
+.titleProjet
+    font-family: $title
+    color: #000
+    font-size: 2.6em
+    text-align: center
+    margin: 20px 0
+    padding-bottom: 20px
 
-// .items img
-//     width: 200px
-//     height: 150px
-//     border-radius: 5%
+.boxProjetIndex
+    // border: solid 2px
+    margin-top: 50px
+    max-width: 600px
+    max-height: 600px
+    // margin-right: 20px
+    
+.titleBoxProjet
+    font-family: $title
+    text-align: center
+    padding-bottom: 10px
 
-// .items
-//     width: 200px
-//     height: 150px
-//     margin: 10px
-//     overflow: hidden
-//     flex-shrink: 0
+.fristImg 
+    width: 350px
+    height: 350px
+    object-fit: scale-down
+    // border: solid 1px 
+    margin-bottom: 10px
+
+// ProjetIndex end
+
+/********MEDIA QUERY POUR ECRAN 992PX  ***********/
+/******min-width 992px**************/
+@include media($md)
+    .punchline
+        top: 40%

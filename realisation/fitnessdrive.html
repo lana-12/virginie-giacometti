@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../img/screenshot/fitnessDrive/favicon.png">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Police -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>FitnessDrive</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid" loading="lazy">
+                <a class="navbar-brand" href="../index.html"><h1 class="titleNavBar">Virginie<span class="beforeNav">Giacometti</span></h1></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">A Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../img/CV-développeurWeb.pdf" download="CV-développeurWeb" title="Cliquez pour visualiser mon CV" alt="Cliquez pour visualiser mon CV">CV</a>
+                        </li>
+                    </ul>   
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2 class="titleRealisation center ">FitnessDrive</h2>
+            <img src="../img/screenshot/fitnessDrive/logo.png" class=" logo img-fluid rounded mx-auto d-block mb-3" alt="Logo FitnessDrive" title="Logo FitnessDrive">
+            <p class="nb text-center">NB: Cette application est longue à s'ouvrir et souvent il faut recharger la page plusieurs fois. Une vidéo de démonstration est en cours de réalisation !</p>
+            <p class="fs-6 title center mb-5">Projet réalisé en PHP, Symfony, SQL</p>
+
+            <div class="slideInRight mb-5">
+                <p class="center">Application de gestion de salle de sport, destinée principalement aux employés de la marque.</p >
+                <p class="center">L’équipe technique de la marque doit pouvoir ajouter des nouveaux franchisés, leurs structures et leurs différentes permissions. Les franchisés et leurs structures auront un accès en lecture uniquement</p>
+
+                <h2 class="titleRealisation center mt-5">Panel Administrateur</h2>
+                <p class="center">Ce panel a été développé sans bundle.</p >
+                <!-- Slideshow container -->
+                <div class="slideshow">
+                    <div class="slidesAdm activeImg fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/homeadm1.png" class="img-fluid" title="Page d'accueil / Mode d'emploi" alt="Page d'accueil / Mode d'emploi" loading="lazy" >
+                        <p class="caption">Page d'accueil / Mode d'emploi</p>
+                    </div>
+                    <div class="slidesAdm fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/listuser.png" class="img-fluid" title="Liste des utilisateurs" alt="Liste des utilisateurs" loading="lazy">
+                        <p class="caption">Liste des utilisateurs</p>
+                    </div>
+                    <div class="slidesAdm fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/newuser.png" class="img-fluid" title="Création d'un utilisateur" alt="Création d'un utilisateur" loading="lazy">
+                        <p class="caption">Création d'un utilisateur</p>
+                    </div>
+                    <div class="slidesAdm fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/listpartner.png" class="img-fluid" title="Liste des franchises" alt="Liste des franchises" loading="lazy">
+                        <p class="caption">Liste des franchises</p>
+                    </div>
+                    <div class="slidesAdm fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/listpartneractive.png" class="img-fluid" title="Afficher les Franchises activées" alt="Afficher les Franchises activées" loading="lazy" >
+                        <p class="caption">Afficher les Franchises activées</p>
+                    </div>
+                    <div class="slidesAdm fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/detailpartner.png" class="img-fluid" title="Détail d'une Franchise" alt="Détail d'une Franchise" loading="lazy" >
+                        <p class="caption">Détail d'une Franchise</p>
+                    </div>
+                    <div class="slidesAdm fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/detailstructure.png" class="img-fluid" title="Détail d'une structures" alt="Détail d'une structures" loading="lazy" >
+                        <p class="caption">Détail d'une structures</p>
+                    </div>
+                    <div class="slidesAdm fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/newstructure.png" class="img-fluid" title="Création d'une structure" alt="Création d'une structure" loading="lazy" >
+                        <p class="caption">Création d'une structure</p>
+                    </div>
+                    <div class="slidesAdm fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/searchstructure.png" class="img-fluid" title="Afficher le résultat de la barre de recherche" alt="Afficher le résultat de la barre de recherche" loading="lazy" >
+                        <p class="caption">Afficher le résultat de la barre de recherche</p>
+                    </div>
+                    <div class="slidesAdm fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/listpermission.png" class="img-fluid" title="Liste des permissions" alt="Liste des permissions" loading="lazy" >
+                        <p class="caption">Liste des permissions</p>
+                    </div>
+                    <div class="slidesAdm fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/editpermission.png" class="img-fluid" title="Modifier une permission" alt="Modifier une permission" loading="lazy" >
+                        <p class="caption">Modifier une permission</p>
+                    </div>
+    
+                    <div class="nextAdm" >
+                        <a ><i class="fa-solid fa-circle-chevron-right "></i>
+                        </a>
+                    </div>
+                    <div class="prevAdm" >
+                        <a><i class="fa-solid fa-circle-chevron-left" ></i>
+                        </a>
+                    </div>
+    
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section>
+            <div class="slideInLeft ">
+            <!-- Slideshow container -->
+                <h2 class="titleRealisation center mt-5">Espace Personnel</h2>                
+                <!-- Slideshow container -->
+                <div class="slideshow">
+                    <div class="slidesEspace activeImg  fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/Home-Client-Desktop.png" class="img-fluid" loading="lazy" title="Page d'Accueil" alt="Page d'Accueil" >
+                        <p class="caption">Page d'Accueil</p>
+                    </div>
+                    <div class="slidesEspace fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/franchise2.png" class="img-fluid" loading="lazy" title="Détail de sa franchise avec structure" alt="Détail de sa franchise avec structure">
+                        <p class="caption">Détail de sa franchise avec structure</p>
+                    </div>
+                    <div class="slidesEspace fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/franchise.png" class="img-fluid" loading="lazy" title="Détail de sa franchise sans structure associée" alt="Détail de sa franchise sans structure associée">
+                        <p class="caption">Détail de sa franchise sans structure associée</p>
+                    </div>
+                    <div class="slidesEspace fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/detailpartnerp.png" class="img-fluid" loading="lazy" title="Détail Franchise" alt="Détail Franchise">
+                        <p class="caption">Détail Franchise</p>
+                    </div>
+                    
+                    <div class="slidesEspace fadeImg">
+                        <img src="../img/screenshot/fitnessDrive/detailpartners.png" class="img-fluid" loading="lazy" title="Détail structure" alt="Détail structure">
+                        <p class="caption">Détail structure</p>
+                    </div>
+                    <div class="nextEspace" >
+                        <a ><i class="fa-solid fa-circle-chevron-right "></i>
+                        </a>
+                    </div>
+                    <div class="prevEspace" >
+                        <a><i class="fa-solid fa-circle-chevron-left" ></i>
+                        </a>
+                    </div>
+
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <section>
+            <h2 class="titleRealisation center mt-5">Autre Pages</h2>
+                <!-- Slideshow container -->
+            <div class="slideshow">
+            
+                <div class="slides activeImg fadeImg">
+                    <img src="../img/screenshot/fitnessDrive/Login-Mobile.png" class="img-fluid" loading="lazy" title="Page de connexion Mobile" alt="Page de connexion Mobile">
+                        <p class="caption">Page de connexion Mobile</p>
+                </div>
+                <div class="slides fadeImg">
+                    <img src="../img/screenshot/fitnessDrive/login.png" class="img-fluid"  title="Page de connexion Desktop" alt="Page de connexion Desktop"  loading="lazy">
+                        <p class="caption">Page de connexion Desktop</p>
+                </div>
+                <div class="slides fadeImg">
+                    <img src="../img/screenshot/fitnessDrive/contact.png" class="img-fluid" title="Se connecter" alt="Se connecter"loading="lazy">
+                    <p class="caption">Se connecter</p>
+                </div>
+                <div class="slides fadeImg">
+                    <img src="../img/screenshot/fitnessDrive/navbarMF.png" class="img-fluid" title="NavBar Mobile" alt="NavBar Mobile" loading="lazy">
+                    <p class="caption">NavBar Mobile</p>
+                </div>
+                <div class="slides fadeImg">
+                    <img src="../img/screenshot/fitnessDrive/navbarDF.png" class="img-fluid" title="NavBar Desktop" alt="NavBar Desktop" loading="lazy">
+                    <p class="caption">NavBar Desktop</p>
+                </div>
+                <div class="slides fadeImg">
+                    <img src="../img/screenshot/fitnessDrive/sidebarmobile.png" class="img-fluid" title="NavBar Admin Mobile" alt="NavBar Admin Mobile" loading="lazy">
+                    <p class="caption">NavBar Admin Mobile</p>
+                </div>
+                <div class="slides fadeImg">
+                    <img src="../img/screenshot/fitnessDrive/sidebarD.png" class="img-fluid" title="Sidebar Admin Desktop" alt="Sidebar Admin Desktop" loading="lazy">
+                    <p class="caption">Sidebar Admin Desktop</p>
+                </div>
+                <div class="next" >
+                    <a ><i class="fa-solid fa-circle-chevron-right "></i>
+                    </a>
+                </div>
+                <div class="prev" >
+                    <a><i class="fa-solid fa-circle-chevron-left" ></i>
+                    </a>
+                </div>
+            </div>
+            
+        </section>
+        <div class=" mt-5 pt-2 pb-3 realisationParagraph">
+                <p class="titleRealisation center">Code d'Accès: </p>
+                <ul>
+                    <li class="underline center mb-3">Pour une Franchise:</li>
+                    <ul>
+                        <li>Id : ibanez@exemple.fr</li>
+                        <li>MdP : ibanezibanez</li>
+                    </ul>
+                    <li class="underline center pt-5 mb-3">Pour une Structure:</li>
+                    <ul>
+                        <li>Id : trinhduc@exemple.fr</li>
+                        <li>MdP : trinhductrinhduc</li>
+                    </ul>
+                </ul> 
+            
+        </div>
+        
+        <div class="mt-5 d-flex justify-content-center">
+            <a href="https://fitnessdrive.fly.dev/" target="_blank" title="Lien pour accéder au site" alt="Lien pour accéder au site" class="btn btnCustom me-5">Site</a>
+            <a href="https://github.com/lana-12/ecf-fitnessDrive" target="_blank" title="Lien pour accéder au Github" alt="Lien pour accéder au Github" class="btn btnCustom">GitHub</a>
+        </div>
+    </main>
+
+    <footer class="container">
+        <section class="boxFooterBlack ">
+            <div class="row">
+                <div class="col-12 ">
+
+                    <div class="footerContact">
+                        <div class="address">
+                            <p>
+                                <a href="mailto:giacomettivirginie@gmail.com" title="Cliquez pour me contacter par mail" alt="Cliquez pour me contacter par mail"><i class=" fa-solid fa-envelope"></i>
+                                giacomettivirginie@gmail.com
+                                </a>
+                            </p>
+                            <p>
+                                <a href="tel:0618568698" title="Contact téléphonique - Cliquez pour appeler" alt="Contact téléphonique - Cliquez pour appeler"><i class="fa fa-phone "></i>0618568698</a>
+                            </p>
+                        
+                            <a href="https://www.linkedin.com/in/virginie-giacometti-a88a01220/" target="_blank" title="Lien vers Linkedin" style="font-size: 25px;"><i class="fa-brands  fa-linkedin"></i></a>
+                        
+                            <a href="https://github.com/lana-12" target="_blank" title="Cliquez pour accéder à mon Github" alt="Cliquez pour accéder à mon Github"  style="font-size: 25px;"><i class=" fa-brands  fa-github"></i></a>
+                        </div>
+
+                        <div class=" footerLogo ">
+                            <img class="logo img-fluid rounded "  loading="lazy"src="../img/logo.png" srcset="" alt="Logo de Virginie Giacometti" title="Logo de Virginie Giacometti">
+                        </div>
+            
+                        <div class="footerMenu">
+                            <ul>
+                                <li><a href="../index.html">Accueil</a></li>
+                                <li><a href="../about.html" >A Propos</a></li>
+                                <li><a href="../contact.html">Contact</a></li>
+                                <li><a href="img/CV-développeurWeb.pdf">CV</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <section class="copyright">
+            <div class="row">
+                <div class="col-12 ">
+
+                    <p class=" copyright">Copyright @ 2023 All rights reserved by :
+                        <a href="mailto:giacomettivirginie@gmail.com" title="Cliquez pour m'envoyer un email" alt="Cliquez pour m'envoyer un email"><strong>Virginie Giacometti</strong></a>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+    </footer>
+    
+    <!-- JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- My JavaScript -->
+    <!-- <script src="../javascript/functionJs.js"></script>  -->
+    <script src="../javascript/functionJs.js"></script> 
+    <script src="../javascript/realisationBack.js"></script> 
+</body>
+</html>

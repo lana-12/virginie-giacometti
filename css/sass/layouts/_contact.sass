@@ -1,33 +1,50 @@
-.contactBg
-    // background-image: url("../../../img/background/bg.svg")
-    background: #000000  
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000)  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000) 
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.contact
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    margin-top: 40px
+    transition: 0.3s
+    transition-property: color, font-weight
+    & a:hover 
+        color: #fff
+        font-weight: 600
+    & .titleContact
+        padding-bottom: 30px
+        font-size: 2em
+        font-family: $title
+    & p 
+        font-family: $text
+        font-weight: 800
+        padding: 10px 0
+
+.form
+    background-color: $blueD
     color: #fff
-    & .contact
+    font-family: $text
+    font-weight: 800
+    border: solid 2px 
+    max-width: 750px
+    margin: 50px 0
+    padding: 20px
+    border-radius: 2%
+    box-shadow: 5px 5px 50px #000
+    & p 
+        text-align: center
+    & .btnContact
+        background-color: #fff
+        color: #000
+        border: solid 2px
+        font-weight: 600
+        border-radius: 3%
+        transition: 0.5s
+        transition-property: color, background-color
+        margin: auto
         display: flex
         align-items: center
-        flex-direction: column
-        text-align: center
-        margin-top: 40px
-        transition: 0.3s
-        transition-property: color, font-weight
-        & a:hover 
-            color: pink
-            font-weight: 600
-    & .form
-        // background-color: pink
-        background-color: rgba(0, 0, 0, 0.256)
-        border: solid 2px 
-        max-width: 650px
-        margin-top: 50px
-        padding: 0 20px
-        border-radius: 3%
-        // box-shadow: 5px 5px 50px #000
-
+        &:hover 
+            background-color: $pink
+            color: #000
 
 .invalid
     color: red
@@ -35,19 +52,9 @@
 .valid
     color: green 
 
+// Icone page Contact start
+.icon
+    padding-right: 10px
+    font-size: 1.2em
+// Icone page Contact end
 
-.titleCol
-    padding-bottom: 20px
-    // color: #fff
-    // text-shadow: 1px 1px 2px #000, 0 0 1em pink, 0 0 0.2em pink
-
-
-/********MEDIA QUERY POUR ECRAN 992PX  ***********/
-/******min-width 992px**************/
-@include media($xl)
-    
-
-
-/********MEDIA QUERY POUR ECRAN 1200PX  ***********/
-/******min-width 1200px**************/
-@include media($xl)
