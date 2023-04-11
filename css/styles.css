@@ -328,7 +328,7 @@ footer .copyright {
 .animationLangageIndex {
   position: absolute;
   right: -100%;
-  top: 90%;
+  top: 100%;
   transform: translateY(-50%);
   -webkit-animation: langageIndex 5s ease forwards;
           animation: langageIndex 5s ease forwards;
@@ -351,6 +351,15 @@ footer .copyright {
     Right: 10%;
   }
 }
+.boxLink {
+  position: absolute;
+  top: 100%;
+}
+
+.projetIndex {
+  margin-top: 150px;
+}
+
 .titleProjet {
   font-family: "Playfair Display", serif;
   color: #000;
@@ -385,6 +394,9 @@ footer .copyright {
 @media screen and (min-width: 768px) {
   .punchline {
     top: 40%;
+  }
+  .animationLangageIndex {
+    top: 85%;
   }
 }
 .titleRealisation {
