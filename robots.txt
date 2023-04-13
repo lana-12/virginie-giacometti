@@ -4,3 +4,5 @@ allow: /
 User-agent: *
 Dissallow: /
 Allow: /
+
+# Sitemap : https://virginie-giacometti.netlify.app/sitemap.xml 
