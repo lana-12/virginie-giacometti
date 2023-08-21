@@ -435,6 +435,7 @@ footer .copyright {
 
 .slideInRight {
   font-family: "Source Serif Pro", serif;
+  font-weight: 700;
   -webkit-animation: slideInRight 2s ease-in-out;
           animation: slideInRight 2s ease-in-out;
   -webkit-animation-fill-mode: forwards;
